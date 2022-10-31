@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	  <title>Mi  primera página </title>
+	  <meta charset="utf-8">
+</head>
+<body>
+	  <h1>HOLA MUNDO</h1>
+	  <p>Esta es mi primera web </p>
+	  <b>Esta es mi web</b>
+	  <pre>
+NOMBRE  APELLIDOS ASIGNATURA
+Rafael  Villar    Lenguaje de marcas
+Angel   Naranjo   Programción
+Emilia  Arjona    Vázquez
+Miguel  Campos    Sistema
+	  </pre>
+
+	  <p> la potencia es una  operación cuya notación es x<sup>nc</sup>sup>
+	  </p>
+	  <p> El  logarismo se expresa long<sub>10</sub>sub>N</p>
+
+
+	  <bdo dir="rtl">Esto está al revés</bdo><br/>
+<h1> LENGUAJE DE MARCAS </h1>
+     <p> asignatura del ciclo superior de desarrollo multiplataforma</p>
+     <hl> etiquetas </hl>
+     <ol star="1">
+        <li> mia </li>
+        <ol>
+           <li> juego</li>
+           <li> feo </li>
+           <li> tarde </li>
+        </ol>
+
+        <li> tuya </li>
+        <li> esa </li>
+      </ol>
+<hr/>
+<H2> Estructura del documento </H2>
+     <p> etiquetas varias</p>
+<hr/>
+
+
+</body>
+
+------------------------------------------------------------------------------------------
+
+<<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+----------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Indice</title>
+</head>
+<body>
+   
+     <h1>Mi tienda online</h1>
+     <a href="otra. html">Ir a otra página en el inicio</a>
+     <h2>Blog</h2>
+
+         <ol> </ol>
+
+
+
+
+</body>
+</html>
+
+------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EJERCICIOS TEMA 1</title>
+</head>
+<body>
+     
+     <h1>EL LAGO DE LOS CISNES</h1>
+     <p>El lago de los cisnes (en ruso Лебединое Озеро [Lebedínoye óziero]) es un cuento de hadas-ballet estructurado en cuatro actos, que fue encargado por el Teatro Bolshói en 1875 y se estrenó en 1877. La música fue compuesta por Piotr Ilich Chaikovski; se trata de su op. 20 y es el primero de sus ballets. En la producción original la coreografía fue creada por Julius Reisinger. El libreto se cree que fue escrito por Vladímir Petróvich Béguichev y Vasily Geltser, basándose en el cuento alemán Der geraubte Schleier (El velo robado) de Johann Karl August Musäus.
+
+     La primera representación tuvo lugar el 4 de marzo de 1877 en el Teatro Bolshói de Moscú. Contrario a su gran reconocimiento actual, esta obra estuvo rodeada de reveses desde su estreno; además de su pobre producción inicial, de la cual se han perdido algunos registros, las creaciones de la música y la coreografía original no fueron paralelas debido a desacuerdos técnicos entre las partes, pues Chaikovski (poco familiarizado con la composición de ballets) trabajó de forma rápida, innovadora y despreocupada en una partitura que terminaría desconcertando a Reisinger. Todo ello hizo que la obra no fuese bien aceptada ni por el público ni por la crítica la cual se expresó con palabras cómo «difícilmente se convertirá en un ballet de repertorio y nadie lo va a lamentar» Sin embargo, el 15 de enero de 1895 en el Teatro Mariinski de San Petersburgo esta misma obra logra su primer gran éxito con una nueva coreografía a cargo de Marius Petipa y Lev Ivanov. Las primeras ideas que tuvo Chaikovski acerca del lago de los cisnes fueron reorganizadas, y el pas de deux que compuso originalmente para el cisne negro fue sustituido por otro, compuesto también por él.</p>
+
+     <b>Composición</b>
+     <p>Los orígenes del ballet El lago de los cisnes son bastante oscuros y, como hay muy pocos registros concernientes a la primera producción de la obra que hayan sobrevivido, solamente cabe especular sobre quién fue el autor del libreto original. La teoría más autorizada atribuye su autoría a Vladímir Petróvich Béguichev, director de los Teatros Imperiales de Moscú durante el tiempo en que el ballet fue producido originalmente, y Vasily Geltser, bailarín del Teatro Imperial Bolshói de Moscú.7​ Pero muy probablemente Geltser solo fue la primera persona en copiar el escenario para su publicación, puesto que una copia conservada lleva su nombre. El primer libreto publicado del ballet y la música compuesta por Chaikovski no se corresponden en muchas partes. De ello se puede inferir que el auténtico primer libreto publicado posiblemente fue elaborado a mano por un escritor del periódico quien había visto los ensayos iniciales. Las nuevas producciones de óperas y ballets siempre se publicaban en los periódicos de la Rusia Imperial, junto con sus respectivos escenarios.</p>
+
+     <b>Representaciones</b>
+
+         <ul>
+         	<li>El estreno fue 4 de marzo de 1877, Teatro Bolshói de Moscú; coreografía de Julius Reisinger; dirigido por Stepán Ryábov; escenografía de Karl Valts (Actos 2 & 4), Iván Shangin (Acto 1), Karl Groppius (Acto 3).</li>
+         	<li>1880 y 1882, Teatro Bolshói de Moscú; coreografía de Joseph Hansen, mismo director y diseñadores que en el estreno.</li>
+         	<li>1895, Teatro Mariinski de San Petersburgo; con coreografía de Marius Petipa (Actos 1 & 3), Lev Ivanov (Actos 2 & 4); dirigido por Riccardo Drigo; escenografía de Iván Andréyev, Mijaíl Bocharov, Henrich Levogt; diseño de vestuario de Yevgueni Ponomaryov</li>
+         	<li>1901, Teatro Bolshói de Moscú; con coreografía de Aleksandr Gorsky; dirigido por Andréi Árends; escenografía de Aleksandr Golovín (Acto 1), Konstantín Korovin (Actos 2 & 4) y N. Klodt (Acto 3).</li>
+         	<li>1911, producción de los Ballets Rusos de Serguéi Diáguilev en Londres; con coreografía de Michel Fokine siguiendo a Petipa-Ivanov; escenografía de Golovín y Korovin.</li>
+         </ul>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EJERCICIO 2. EMILIA ARJONA VAZQUEZ</title>
+</head>
+
+    <h2>MAIRENA DEL ALJARAFE</h2>
+    <strong> MI PUEBLO </strong>
+    
+
+
+
+
+
+
+
+
+<body>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maria Auxiliadora</title>
+  <style type="text/css">
+    body{
+      background-color: #478ee6;
+    }
+    div{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+     <h1>INDICE</h1>
+     <ul>
+     	<li>Introducción</li>
+     	<li>Cosmogonía de la lucha entre el bien y el mal</li>
+     	<li>Historia</li>
+     	<li>Entre los padres de la Iglesia</li>
+     	<li>Pío VII y Napoleón</li>
+     	<li>Don Bosco</li>
+     	<li>Imagen de María Auxiliadora</li>
+     	<li>Devoción</li>
+     	<li>Oraciones a María Auxiliadora</li>
+     </ul>
+
+
+                               
+      <title>Maria Auxiliadora</title>
+   
+      <h1>Maria Auxiliadora</h1>
+      <h2>Emilia Arjona Vázquez</h2>
+      <h2> Indice</h2>
+      <hr>
+      <p> Titulo de cada apartado</p>
+        <h1> EVALUACIÓN UNIDAD 1</h1>
+        <h2> Web Maria Auxiliadora</h2>
+      <a href="EVALUACIÓN UNIDAD 1">
+      <div>
+        <img src="">
+
+
+    </body>
+  
+
+     </ul>
+
+
+</body>
+</html>

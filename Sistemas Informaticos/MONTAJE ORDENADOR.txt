@@ -1,0 +1,74 @@
+
+
+
+PIEZAS QUE COMPONEN UN ORDENADOR
+
+- Placa base
+Es una pieza conformada por una serie de chips y circuitos integrados donde se conectan el resto de las partes vitales de un ordenador. Estos puertos de conexión son conocidos como slots.
+Al ser la pieza que conecta el resto de las partes de la computadora, la placa base es uno de los componentes más importantes de cualquier ordenador, ya que en ella se conecta el procesador, las unidades de almacenamiento, la memoria RAM y otros elementos más. La tarjeta madre también cuenta con una memoria ROM integrada en la cual se almacena la BIOS, una serie de datos que permite el arranque del ordenador, así como también hace posible que el equipo reconozca cualquier periférico o componente que se conecte a la misma.
+https://www.pccomponentes.com/msi-pro-b660m-a-ddr4
+Precio: 109,90€
+
+- Procesador (CPU)Unidad central de procesamiento
+Es la parte de la computadora responsable de procesar toda la información que se hace pasar por la computadora. En este sentido, es una pieza capaz de leer lenguaje de máquina y llevar a cabo un número sumamente alto de operaciones matemáticas en poco tiempo. 
+Dichas operaciones son las que luego se traducen en datos o información de valor para los seres humanos. Debido a la importante función del microprocesador, es comúnmente reconocido como el cerebro del ordenador, ya que es capaz de controlar el hardware y el software del computador. 
+
+https://www.pccomponentes.com/amd-ryzen-5-5600x-37ghz
+Precio: 229,90€
+
+-Memoria RAM
+La memoria RAM o Memoria de Acceso Aleatorio, es un tipo de memoria capaz de almacenar datos y resultados cuyo uso será temporal. De esta manera, luego de que el microprocesador procesa información y arroja resultados, es la memoria RAM quien se encarga de guardar dichos resultados. Debido a esta función, la memoria RAM es considerada una memoria de tipo operativa. 
+Al iniciar un software de aplicación en cualquier computadora, el procesador empieza a procesar una serie de datos digitales referentes a las instrucciones de funcionamiento de dicho software. Inmediatamente, cuando el programa empieza a ser utilizado, la memoria RAM almacena toda la información referente a este uso y la envía al procesador para que éste los “procese”. Este trabajo cíclico entre memoria RAM y procesador es el que hace funcionar las computadoras de la forma tal y como conocemos. 
+
+https://www.pccomponentes.com/corsair-vengeance-rgb-pro-sl-ddr4-3600-pc4-28800-32gb-2x16gb-cl18-optimizado-amd-ryzen
+Precio: 124,99 €
+
+-Disco duro
+El disco duro, HDD o disco rígido, es un dispositivo empleado por el computador para guardar todo tipo de archivos y datos digitales en distintos formatos. En este sentido, la función principal de un disco duro no es otra que guardar la información de interés para el usuario, la cual puede ir desde archivos de texto y multimedia, hasta softwares y otro tipo de contenido.
+Estos dispositivos cuentan con la capacidad de almacenar la información que se almacena en él por un tiempo indefinido, por lo que al apagar el ordenador, los archivos siguen guardados en el disco duro. Esto es posible debido a que un disco duro posee un disco rígido interno fabricado en aluminio, siendo ésta la pieza utilizada para almacenar los datos de manera
+ similar a como lo haría un CD normal. A pesar de esta similitud, en un disco duro es posible borrar y almacenar archivos un sinfín de veces.
+https://www.pccomponentes.com/kioxia-exceria-plus-1tb-ssd-nvme-m2-2280
+Precio: 134,99 €
+
+-Tarjeta gráfica
+La tarjeta de video o tarjeta gráfica es un componente que puede ser conectado a la tarjeta madre de una computadora. Esto, con el fin de procesar todos los archivos generados por el CPU que van destinados a ser representados en el monitor o cualquier dispositivo de salida conectado al equipo. Al ser una tarjeta de expansión, éstas cuentan con una unidad de procesamiento gráfico independiente o GPU.
+Gracias a la tarjeta de video, un ordenador puede recibir y procesar una mayor cantidad de datos digitales que buscan representar imágenes en pantalla, debido a esto, los softwares que ameritan de procesar una gran cantidad de datos de este tipo ameritan de que el ordenador cuente con una tarjeta de video. De otra forma, es posible que el ordenador se ralentice, ya que el microprocesador por sí solo no podría ser capaz de llevar a cabo las funciones de procesamiento de imagen junto al resto de las funciones elementales del computador.
+https://www.pccomponentes.com/msi-geforce-rtx-2060-ventus-oc-12gb-gddr6
+Precio: 329,89€
+
+-Tarjeta de red
+La tarjeta de red o placa de red, es un componente de hardware que forma parte de las partes fundamentales de una computadora. Se trata de una pequeña placa que se conecta a la tarjeta madre del ordenador y cuenta con una serie de puertos que hacen posible conectar el equipo a una red informática y compartir archivos o recursos.
+La tarjeta de red permite conectar un equipo a una red de conexión local (LAN) o a internet de manera alámbrica por medio de un puerto Ethernet. No obstante, existen muchos tipos de tarjeta de red, existiendo algunas que brindan la posibilidad de conectarse o crear una red inalámbrica Wi-Fi
+https://www.pccomponentes.com/tp-link-archer-tx50e-adaptador-pcie-ax3000-wi-fi-6-bluetooth-50
+Precio: 49,99€
+-Fuente de alimentación
+También conocida como fuente de poder, se trata de la parte de la computadora responsable de recibir la corriente alterna que obtiene el equipo a través de la toma de corriente y transformarla en corriente continua, la cual es utilizada para alimentar los distintos circuitos eléctricos del computador.
+Además de esta función elemental, la fuente de alimentación se encarga de enviar el voltaje exacto que amerita cada componente de la computadora para funcionar de manera correcta, ininterrumpida y sin fallas. La mayoría de las fuentes de poder integradas a ordenadores modernos cuentan con protectores de voltaje, lo que ayuda a evitar que la computadora pueda llegar a sufrir fallos como resultado de alguna sobrecarga eléctrica.
+https://www.pccomponentes.com/forgeon-bolt-psu-750w-80-gold-full-modular-fuente-de-alimentacion
+Precio: 127,99€
+
+-Monitor
+El monitor o pantalla, es un dispositivo de salida utilizado por las computadoras para representar de manera visual, la interfaz del sistema operativo. Además de esto, permite la interacción entre el usuario y la PC, ya que por medio de ésta, es posible observar los distintos procesos que se realizan con el equipo. De igual manera, es por medio del monitor, que una persona puede monitorear las distintas tareas que desea llevar a cabo con la computadora.
+Los monitores tienen la apariencia de televisores convencionales que muestran los datos procesados en forma de píxeles, no obstante, el progreso de la tecnología ha permitido que los monitores sean cada vez más ligeros, compactos y al mismo tiempo, permitan alcanzar una mejor calidad de imagen.
+https://www.pccomponentes.com/msi-optix-g241vc-236-led-fullhd-75hz-freesync-curva
+Precio: 139,98€
+-Teclado
+El teclado o keyboard, es un dispositivo de entrada que los permite a los usuarios ingresar datos al computador por medio de teclas. Los teclados generalmente tienen una apariencia similar a la de una máquina de escribir tradicional, contando así con teclas que representan cada una de las letras del alfabeto, números, símbolos, caracteres especiales y además, teclas de funciones especiales.
+Existen diferentes tipos de teclado, por lo que no existe una configuración estándar para la distribución de las teclas. No obstante, la función primordial de un teclado de computadora es brindar una manera práctica y cómoda de ingresar datos al ordenador por medio de la pulsación de teclas.
+https://www.pccomponentes.com/hp-300-teclado-raton-inalambrico
+Precio monitor y ratón: 27,99€
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

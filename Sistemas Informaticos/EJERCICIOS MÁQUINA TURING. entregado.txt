@@ -1,0 +1,11 @@
+E0 a _ r E1a
+E0 b _ r E1b
+E1a a a r E2a
+E1b b b r E2b
+E2a _ _ l E3a
+E2b _ _ l E3b
+E$ a _ r E$1
+E$1 b _ r E$2
+E$ _ _ r E$3
+E$3 _ _ * E$4
+

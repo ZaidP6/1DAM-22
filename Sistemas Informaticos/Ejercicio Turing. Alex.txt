@@ -1,0 +1,40 @@
+E0 0 k r ER1
+E0 1 k r ER2
+E0 2 k r ER3
+E0 k * r E0
+E0 $ * r EC
+E0 _ * l EF
+
+ER1 * * r ER1
+ER1 $ * r E1
+
+ER2 * * r ER2
+ER2 $ * r E2
+
+ER3 * * r ER3
+ER3 $ * r E3
+
+E1 0 k l ER
+E1 k * r E1
+E1 * k l EFN
+
+E2 1 k l ER
+E2 k * r E2
+E2 * k l EFN
+
+E3 2 k l ER
+E3 k * r E3
+E3 * k l EFN
+
+ER * * l ER
+ER _ * r E0
+
+EC k * r EC
+EC * k l EFN
+EC _ * l EF
+
+EF * * l EF
+EF $ S * halt
+
+EFN * * l EFN
+EFN $ N * halt
