@@ -13,20 +13,23 @@ public class Principal {
 		
 		
 		System.out.println("Bienvenido al programa");
-		System.out.println("Escriba un número");
+		System.out.println("Escriba ocho números");
 
 
 		for(int i=0; i<num.length; i++) {
 			num[i]=Leer.datoDouble();
 		}
 		
-		
+		for(int i=0; i<num.length; i++) {
+			suma = num[i];
+		}
 		
 		for(int i=0; i<num.length; i++) {
 			if (num[i]==0) {
 				ceros++;
 			}
 		}
+		
 		
 		media = suma/num.length;
 		System.out.println("La media de los números es: "+media);
