@@ -13,7 +13,7 @@ public class Principal {
 		String[] carreras= {"primera","segunda","tercera"};
 		String nombre;
 		char respuesta;
-		int salir;
+		int salir = 0;
 		
 		System.out.println("Bienvenido al programa del ej.7.");
 		
