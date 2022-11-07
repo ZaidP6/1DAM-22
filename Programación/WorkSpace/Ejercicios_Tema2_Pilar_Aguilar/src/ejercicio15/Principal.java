@@ -34,7 +34,7 @@ public class Principal {
 		opcion = Leer.datoInt();
 		
 		
-			switch(opcion) {
+		switch(opcion) {
 			
 			case 1:
 				System.out.println("Por favor, indique los dos números separados con un enter.");

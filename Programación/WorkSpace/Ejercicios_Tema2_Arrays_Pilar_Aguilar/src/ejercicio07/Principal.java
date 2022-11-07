@@ -13,6 +13,7 @@ public class Principal {
 		String[] carreras= {"primera","segunda","tercera"};
 		String nombre;
 		char respuesta;
+		int salir;
 		
 		System.out.println("Bienvenido al programa del ej.7.");
 		
@@ -34,7 +35,7 @@ public class Principal {
 			}
 			tiempoTtl=tiempoTtl/tiempos.length;
 			
-		}
+		}while(salir != 0);
 		
 		
 			
