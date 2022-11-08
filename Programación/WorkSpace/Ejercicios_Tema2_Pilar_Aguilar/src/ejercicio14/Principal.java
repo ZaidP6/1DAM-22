@@ -76,6 +76,9 @@ public class Principal {
 					saldo = saldo - totalEntrada;
 					System.out.printf("Ha comprado %d entradas por un total de %.2f€. Su saldo actual es de %.2f€.\n",cantEntrada,totalEntrada,saldo);
 					break;
+				
+				default:
+					System.out.println("Número erróneo, vuelva a introducir otro número.");
 			}
 			
 			System.out.println("****************************************");

@@ -6,11 +6,12 @@ public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int tam=8, ceros=0;
-		double suma =0;
-		double[]num = new double [tam];
-		double media;
 		
+		int ceros=0;
+		double suma =0;
+		double media;
+		int tam=8;
+		double[]num = new double [tam];
 		
 		System.out.println("Bienvenido al programa");
 		System.out.println("Escriba ocho números");
@@ -21,7 +22,7 @@ public class Principal {
 		}
 		
 		for(int i=0; i<num.length; i++) {
-			suma = num[i];
+			suma = suma + num[i];
 		}
 		
 		for(int i=0; i<num.length; i++) {
@@ -31,7 +32,7 @@ public class Principal {
 		}
 		
 		
-		media = suma/num.length;
+		media = suma/tam;
 		System.out.println("La media de los números es: "+media);
 		System.out.printf("Y en total has inrtoducido %d ceros.", ceros);
 		
