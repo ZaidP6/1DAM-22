@@ -76,6 +76,7 @@ public class Principal {
 			}
 			
 			System.out.println("El número mayor del array es: "+mayor+".");
+			System.out.println("El número menor del array es: "+menor+".");
 			}
 			
 		System.out.println("Por favor introduzca el número del elemento que desea cambiar.");

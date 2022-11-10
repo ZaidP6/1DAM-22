@@ -73,11 +73,13 @@ public class Principal {
 			
 			if(aleatorio[i]>mayor) {
 				mayor = aleatorio[i];
-			}
+			}else 
+				System.out.println("Lo siento, ese valor no es correcto");
 			
 			if(aleatorio[i]<menor) {
 				menor = aleatorio[i];
-			}
+			}else
+				System.out.println("Lo siento, ese valor no es correcto");
 
 		}
 		
