@@ -1,0 +1,47 @@
+@font-face {
+    font-family:"kalam" ;
+    src: url('../Fuentes/Kalam-Regular.ttf');
+ }
+ @font-face {
+    font-family: college;
+    src: url(../Fuentes/college.ttf);
+}
+body{
+   
+    font-family:kalam, Arial, Helvetica, sans-serif;
+     text-align: center;
+     background-color:lightgrey;
+     text-align: left;
+}
+h1{
+    color:lightseagreen;
+    font-size: 48pt;
+    text-align: center;
+    font-family:college, Arial, Helvetica, sans-serif;
+ }
+ p{
+    font-size: 14pt;
+    text-align: justify;
+    font-weight: 700;
+    text-indent: 5%;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+ }
+
+h2{
+    color:indigo;
+    font-size: 36pt;
+    text-align: center;
+    font-family: college,Arial, Helvetica, sans-serif;
+}
+.sub{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 6pt;
+    text-align: left;
+    margin-bottom: 2%;
+}
+div{
+    
+    text-align: center;
+}

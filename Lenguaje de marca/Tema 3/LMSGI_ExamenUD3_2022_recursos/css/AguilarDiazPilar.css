@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Mohave-Regular;
+    src: url(../fonts/Mohave-Regular.ttf);
+}
+
+.titulo{
+    color:rgb(0, 87, 194);
+    width: 2.6em;
+    font-family: Calibri, Arial, sans-serif;
+    letter-spacing: 4pt;
+    }
+  
+.subtitulo{
+    color: rgb(114, 114, 114);
+    font-family: Mohave-Regular, sans-serif;
+    width: 1.5em;
+    
+  }
+  
+.fecha{  
+    color:rgb(124, 124, 124);
+    width:0.6em;
+    text-transform:uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+  }
+  
+.divImg{
+
+    text-align: center;
+    
+  }
+.p{
+    font-family: Helvetica, Georgia;
+    width: 0.8em;
+    color: rgb(112, 112, 112);
+    
+}
+.body{
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    text-align: justify;
+}
+  
