@@ -50,7 +50,7 @@ public class Principal {
 		Random rnd=new Random(System.nanoTime());
 
 
-		do {
+		do {		//se pregunta el carnet que tiene
 			System.out.println("Por favor, indique el índice del carnet que tiene.");
 			System.out.println("1 - AM o B con menos de 3 años de antigüedad.");
 			System.out.println("2 - A1 o B con más de 3 años de antigüedad");
@@ -62,7 +62,7 @@ public class Principal {
 			
 			opcion4 = Leer.datoInt();
 			
-			switch (opcion4) {
+			switch (opcion4) { //diferentes opciones segun el carnet elegido
 			
 				case 1:
 					
@@ -80,7 +80,7 @@ public class Principal {
 					opcion5 = Leer.datoInt();
 					System.out.println("************************************************************************");
 					
-						switch (opcion5) {
+						switch (opcion5) { //caracteristicas moto1 AM
 							case 1:
 								System.out.println("Estupendo, usted a eligido la "+modelosMoto[0][0]);
 								System.out.println("Estas son las especificaiones técnicas:");
@@ -106,7 +106,7 @@ public class Principal {
 									}
 								break;
 							
-							case 2:
+							case 2:			//caracteristicas moto2 AM
 								System.out.println("Estupendo, usted a eligido la "+modelosMoto[0][1]);
 								System.out.println("Estas son las especificaiones técnicas:");
 								System.out.println("- Precio: "+preciosMotos[0][1]+"€");
@@ -132,7 +132,7 @@ public class Principal {
 								break;
 	
 								
-							case 3:
+							case 3:			//caracteristicas moto3 AM
 								System.out.println("Estupendo, usted a eligido la "+modelosMoto[0][2]);
 								System.out.println("Estas son las especificaiones técnicas:");
 								System.out.println("- Precio: "+preciosMotos[0][2]+"€");
@@ -169,7 +169,7 @@ public class Principal {
 					
 				case 2:
 					
-					do {
+					do { 			//elegimos moto del carnet A1
 					
 					System.out.println("Estupendo, usted a eligido el carnet A1 o B con más de 3 años. Estas son las motos disponibles específicas para usted.\n¿Qué moto quiere ver?");
 					System.out.println("1 - "+modelosMoto[1][0]);
@@ -184,7 +184,7 @@ public class Principal {
 					System.out.println("************************************************************************");
 					
 					switch (opcion5) {
-						case 1:
+						case 1:			//caracteristicas moto1 A1
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[1][0]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[1][0]+"€");
@@ -214,7 +214,7 @@ public class Principal {
 								}
 							break;
 						
-						case 2:
+						case 2:			//caracteristicas moto2 A1
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[1][1]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[1][1]+"€");
@@ -239,7 +239,7 @@ public class Principal {
 								}
 							break;
 								
-						case 3:
+						case 3:			//caracteristicas moto3 A1
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[1][2]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[1][2]+"€");
@@ -271,7 +271,7 @@ public class Principal {
 					
 					break;
 					
-				case 3:
+				case 3:			//elegir modelo moto A2
 					
 					do {
 					
@@ -287,7 +287,7 @@ public class Principal {
 					opcion5 = Leer.datoInt();
 					System.out.println("************************************************************************");
 					
-					switch (opcion5) {
+					switch (opcion5) {		//caracteristicas moto1 A2
 						case 1:
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[2][0]);
 							System.out.println("Estas son las especificaiones técnicas:");
@@ -313,7 +313,7 @@ public class Principal {
 								}
 							break;
 						
-						case 2:
+						case 2:				//caracteristicas moto2 A2
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[2][1]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[2][1]+"€");
@@ -339,7 +339,7 @@ public class Principal {
 							break;
 	
 							
-						case 3:
+						case 3:				//caracteristicas moto3 A2
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[2][2]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[2][2]+"€");
@@ -371,7 +371,7 @@ public class Principal {
 					
 					break;
 					
-				case 4:
+				case 4:			//elegir modelos moto A
 					
 					do {
 					
@@ -388,7 +388,8 @@ public class Principal {
 					System.out.println("************************************************************************");
 					
 					switch (opcion5) {
-						case 1:
+						case 1:				//caracteristicas moto1 A
+							
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[3][0]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[3][0]+"€");
@@ -418,7 +419,8 @@ public class Principal {
 								}
 							break;
 						
-						case 2:
+						case 2:				//caracteristicas moto2 A
+							
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[3][1]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[3][1]+"€");
@@ -444,7 +446,8 @@ public class Principal {
 							break;
 	
 							
-						case 3:
+						case 3:				//caracteristicas moto3 A
+							
 							System.out.println("Estupendo, usted a eligido la "+modelosMoto[3][2]);
 							System.out.println("Estas son las especificaiones técnicas:");
 							System.out.println("- Precio: "+preciosMotos[3][2]+"€");
@@ -477,26 +480,25 @@ public class Principal {
 					
 					break;
 					
-				case 5:
+				case 5:			//opcion a mostrar todo el catalogo
 					
-					do {
+					do {		
 					
 					System.out.println("Estas son todas las motos disponibles.\n¿Qué moto quiere ver?");
-					System.out.println("1 - "+modelosMoto[0][0]);
-					System.out.println("2 - "+modelosMoto[0][1]);
-					System.out.println("3 - "+modelosMoto[0][2]);
-					System.out.println("4 - "+modelosMoto[1][0]);
-					System.out.println("5 - "+modelosMoto[1][1]);
-					System.out.println("6 - "+modelosMoto[1][2]);
-					System.out.println("7 - "+modelosMoto[2][0]);
-					System.out.println("8 - "+modelosMoto[2][1]);
-					System.out.println("9 - "+modelosMoto[2][2]);
-					System.out.println("10 - "+modelosMoto[3][0]);
-					System.out.println("11 - "+modelosMoto[3][1]);
-					System.out.println("12 - "+modelosMoto[3][2]);
+					System.out.println("1 - "+modelosMoto[0][0]);		//AM		
+					System.out.println("2 - "+modelosMoto[0][1]);		//AM
+					System.out.println("3 - "+modelosMoto[0][2]);		//AM
+					System.out.println("4 - "+modelosMoto[1][0]);		//A1
+					System.out.println("5 - "+modelosMoto[1][1]);		//A1
+					System.out.println("6 - "+modelosMoto[1][2]);		//A1
+					System.out.println("7 - "+modelosMoto[2][0]);		//A2
+					System.out.println("8 - "+modelosMoto[2][1]);		//A2
+					System.out.println("9 - "+modelosMoto[2][2]);		//A2
+					System.out.println("10 - "+modelosMoto[3][0]);		//A
+					System.out.println("11 - "+modelosMoto[3][1]);		//A
+					System.out.println("12 - "+modelosMoto[3][2]);		//A
 					opcion5 = Leer.datoInt();
 					
-					System.out.println("Estupendo, usted a eligido la "+modelosMoto[opcion4-1][opcion5-1]);
 					System.out.println("Estas son las especificaiones técnicas:");
 					System.out.println("- Precio: "+preciosMotos[opcion4-1][opcion5-1]+"€");
 					System.out.println("- Potencia: "+potenciaM[opcion4-1][opcion5-1]+"CV");
@@ -518,16 +520,17 @@ public class Principal {
 					}else {
 						System.out.println("En ese caso, el precio de tu moto sería: "+preciosMotos[opcion4-1][opcion5-1]+"€");
 						}
-								
+				
+					}while(opcion5 != cero);
+				
 				default:
-					System.out.println("Número erróneo, vuelva a introducir otro número.");
-			
-			}while(opcion5 != cero);
+					if (opcion5 != 0) {
+						System.out.println("Número erróneo, vuelva a introducir otro número.");
+					}
 					
 					break;
-			
-			
-			
+			}
+
 			System.out.println("************************************************************************");
 			System.out.println("Para salir pulse 0. Para volver al menú pulse cualquier otro número.");
 			opcion4 = Leer.datoInt();
