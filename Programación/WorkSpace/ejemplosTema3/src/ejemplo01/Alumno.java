@@ -14,6 +14,15 @@ public class Alumno {
 	
 	//PROGRAMA
 	
+		//Constructores
+	
+	public Alumno(String nombre, double mediaNotas,int codAlum, char sexo, boolean repetidor) {
+		this.nombre = nombre;
+		this.toString;
+		this.repetidor)
+		this.repetidor();
+	}	
+	
 	
 
 }
