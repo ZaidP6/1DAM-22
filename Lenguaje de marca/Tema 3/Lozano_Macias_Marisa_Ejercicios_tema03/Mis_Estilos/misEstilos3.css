@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "akbaal" ;
+    src: url('../Fuentes/Ejercicio5/akbaal.ttf');
+}
+@font-face {
+    font-family: "angie" ;
+    src: url('../Fuentes/Ejercicio5/Angie\ in\ Love.ttf');
+}
+@font-face {
+    font-family: "forme" ;
+    src: url('../Fuentes/Ejercicio5/ATypewriterForMe.ttf');
+}
+@font-face {
+    font-family: "burnstown";
+    src: url('../Fuentes/Ejercicio5/burnstown\ dam.ttf');
+}
+@font-face {
+    font-family: "diogenes" ;
+    src: url('../Fuentes/Ejercicio5/DIOGENES.ttf');
+}
+@font-face {
+    font-family: "far" ;
+    src: url('../Fuentes/Ejercicio5/FuckinGwenhwyfar.ttf')
+}
+@font-face {
+    font-family: "grunja" ;
+    src: url('../Fuentes/Ejercicio5/GRUNJA__.ttf');
+}
+@font-face {
+    font-family: "old" ;
+    src: url('../Fuentes/OldeEnglish.ttf');
+}
+body {
+    background-color: rgba(255, 248, 183, 0.781);
+    text-align: center;
+}
+h1{
+    font-size: 50pt;
+    font-family: forme, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(0, 200, 250);
+    
+}
+.clase1{
+    font-size: 40pt;
+    font-family: akbaal, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightblue;
+    letter-spacing: 20pt;
+    word-spacing: 40pt;
+}
+.clase2{
+    font-size: 60pt;
+    font-family: angie, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:lightcoral;
+    letter-spacing: 20pt;
+    word-spacing: 40pt;
+}
+.clase3{
+    font-size:50pt;
+    font-family: forme, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:lightgreen;
+    letter-spacing: 20pt;
+    word-spacing: 40pt;
+}
+.clase4{
+    font-size: 50pt;
+    font-family: burnstown, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(180, 50, 163);
+    letter-spacing: 20pt;
+    word-spacing: 20pt;
+}
+.clase5{
+    font-size:50pt;
+    font-family: diogenes, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(123, 211, 23);
+    letter-spacing: 20pt;
+    word-spacing: 50pt;
+}
+.clase6{
+    font-size:50pt;
+    font-family: far, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(110, 0, 212);
+    letter-spacing: 20pt;
+    word-spacing: 50pt;
+}
+.clase7{
+    font-size:50pt;
+    font-family: grunja, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(243, 208, 7);
+    letter-spacing: 20pt;
+    word-spacing: 30pt;
+}

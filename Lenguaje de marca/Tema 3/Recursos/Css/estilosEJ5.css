@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "GODOFWAR" ;
+    src: url(../Fonts/GODOFWAR.TTF);
+}
+@font-face {
+    font-family: "AngerStyles" ;
+    src: url(../Fonts/AngerStyles.ttf);
+}
+@font-face {
+    font-family: "EG Dragon Caps" ;
+    src: url(../Fonts/EG_Dragon_Caps.ttf);
+}
+@font-face {
+    font-family: "Pantherdam Signature";
+    src: url(../Fonts/Pantherdam\ Signature.ttf);
+}
+@font-face {
+    font-family: "Newton Howard" ;
+    src: url(../Fonts/Newton\ Howard\ Font.ttf);
+}
+@font-face {
+    font-family: "Skateboard Girl Demo Regular" ;
+    src: url(../Fonts/SkateboardGirlDemoRegular.ttf)
+}
+@font-face {
+    font-family: "The Beast" ;
+    src: url(../Fonts/TheBeast.ttf);
+}
+@font-face {
+    font-family: "Wrath Styles" ;
+    src: url(../Fonts/WrathStyles.ttf);
+}
+body {
+    background-color: rgba(209, 255, 183, 0.781);
+    text-align: center;
+}
+h1{
+    font-size: 80pt;
+    font-family: GODOFWAR, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(99, 4, 194);
+    
+}
+.fila1{
+    font-size: 55pt;
+    font-family: AngerStyles, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(26, 159, 203);
+    letter-spacing: 20pt;
+    word-spacing: 40pt;
+}
+.fila2{
+    font-size: 40pt;
+    font-family: 'EG Dragon Caps', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(140, 3, 3);
+    letter-spacing: 20pt;
+    word-spacing: 40pt;
+}
+.fila3{
+    font-size:80pt;
+    font-family: 'Pantherdam Signature', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(54, 108, 54);
+    letter-spacing: 20pt;
+    word-spacing: 60pt;
+}
+.fila4{
+    font-size: 70pt;
+    font-family: 'Pantherdam Signature', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(37, 25, 129);
+    letter-spacing: 20pt;
+    word-spacing: 20pt;
+}
+.fila5{
+    font-size:50pt;
+    font-family: 'The Beast', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(92, 131, 48);
+    letter-spacing: 20pt;
+    word-spacing: 70pt;
+}
+.fila6{
+    font-size:60pt;
+    font-family: 'Skateboard Girl Demo Regular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(7, 188, 130);
+    letter-spacing: 20pt;
+    word-spacing: 65pt;
+}
+.fila7{
+    font-size:60pt;
+    font-family: 'Wrath Styles', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(231, 136, 11);
+    letter-spacing: 15pt;
+    word-spacing: 70pt;
+}
