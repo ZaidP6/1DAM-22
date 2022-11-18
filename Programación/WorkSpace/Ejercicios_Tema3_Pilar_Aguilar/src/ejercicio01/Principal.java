@@ -22,7 +22,7 @@ public class Principal {
 		
 		cir3 = new Circulo();
 		
-		//cómom se llma a un metodo
+		//cómo se llma a un metodo
 		res = cir3.calcularArea(2.2);
 		System.out.println("El área es: "+res);
 

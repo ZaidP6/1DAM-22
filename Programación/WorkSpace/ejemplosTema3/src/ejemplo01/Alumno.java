@@ -2,7 +2,7 @@ package ejemplo01;
 
 public class Alumno {
 	
-	//VARIABLES
+	//ATRIBUTOS
 	
 	String nombre;
 	int edad;
@@ -18,9 +18,7 @@ public class Alumno {
 	
 	public Alumno(String nombre, double mediaNotas,int codAlum, char sexo, boolean repetidor) {
 		this.nombre = nombre;
-		this.toString;
-		this.repetidor)
-		this.repetidor();
+		
 	}	
 	
 	

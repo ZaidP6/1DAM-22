@@ -2,8 +2,11 @@ package ejercicio01;
 
 public class Circulo {
 	
+	//atributos
 	double radio;
 	
+	
+	//constructores
 	public Circulo() {
 		
 		
@@ -14,11 +17,11 @@ public class Circulo {
 	
 	//metodos
 	
-	public double calcularArea(double ra) {
+	public double calcularArea(double rad) {
 		
 		double exp2 = 2;
 		double resultado = 0.0;
-		resultado = Math.PI * Math.pow(ra, exp2);
+		resultado = Math.PI * Math.pow(rad, exp2);
 		return resultado;
 	}
 
