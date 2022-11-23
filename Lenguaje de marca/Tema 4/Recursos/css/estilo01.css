@@ -1,0 +1,17 @@
+@font-face {
+    font-family: GODOFWAR;
+    src: url(../Fonts/GODOFWAR.TTF);
+}
+
+h1{
+    text-align: center;
+    border: 1250px 250px;
+    font-family: GODOFWAR, Arial, Helvetica, sans-serif;
+    color: royalblue;
+    background-color: yellow;
+    border-color: royalblue;
+    border-style: dotted;
+    font-size: 35pt;
+    border-width: 5px;
+    border-radius: 25px;
+}
