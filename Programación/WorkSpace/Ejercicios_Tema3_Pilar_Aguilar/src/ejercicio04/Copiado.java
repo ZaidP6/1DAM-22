@@ -1,12 +1,18 @@
 package ejercicio04;
 
-import utilidades.Leer;
+
 
 public class Copiado {
-
-	public String IntroducirTexto() {
-		String texto;
+	
+	public Copiado() {
 		
-		texto = Leer.dato();
+	}	
+	
+	public void repetir(int veces, String frase){
+		
+		for (int i = 0; i<veces;i++) {
+			System.out.println(frase);
+		}
+		
 	}
 }

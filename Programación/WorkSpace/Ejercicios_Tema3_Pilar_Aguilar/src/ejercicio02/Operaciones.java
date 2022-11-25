@@ -5,7 +5,7 @@ public class Operaciones {
 	
 	
 	public Operaciones(int entero) {
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public String calcPosi(int num) {
