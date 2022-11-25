@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            border: 1px black solid;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        p{
+            border: 1px red solid;
+            flex-basis: 25%;
+            /*se cambia el tamaño en vez de usar el width se usa flex-basis*/
+            flex-grow: 1;
+            text-align: center;
+        }
+        .p1{
+            flex-grow: 3;
+            flex-shrink: 4;
+        }
+        .p3{
+            flex-grow: 9;
+        }
+        .p4{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="p1">
+            primero
+        </p>
+        <p class="p2">
+            segundo
+        </p>
+        <p class="p3">
+            tercero
+        </p>
+        <p class="p4">
+            cuarto
+        </p>
+        <p class="p5">
+            quinto
+        </p>
+    </header>
+    
+</body>
+</html>
