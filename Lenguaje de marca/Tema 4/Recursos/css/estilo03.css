@@ -1,0 +1,42 @@
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(117, 37, 223);
+    word-spacing: 5pt;
+    margin: 0 auto;
+    font-size: 35pt;
+    width: 50%;
+    text-align: center;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(41, 127, 240);
+    word-spacing: 2pt;
+    font-size: 25pt;
+    text-align: left;
+}
+p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 2pt;
+    margin: 0 auto;
+
+}
+ul{
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 2pt;
+    margin: 0 auto;
+}
+body{
+    background-color: rgb(185, 185, 185);
+    
+}
+.contenido{
+    display: flex;
+}
+nav{
+    text-align: left;
+    box-sizing: 15%;
+    border: 3px;
+    padding: 2px;
+}

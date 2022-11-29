@@ -1,17 +1,10 @@
-package ejercicio05;
+package ejercicio06;
 
 public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		public static void () {
-			
-		}
-		
-		
-		
-		
+
 	}
 
 }
