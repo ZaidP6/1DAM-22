@@ -29,6 +29,7 @@ ul{
 }
 body{
     background-color: rgb(185, 185, 185);
+    margin: 0.5%;
     
 }
 .contenido{
@@ -36,7 +37,27 @@ body{
 }
 nav{
     text-align: left;
-    box-sizing: 15%;
+    box-sizing: 20%;
     border: 3px;
-    padding: 2px;
+    background-color:beige;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 5px;
+
+}
+main{
+    margin: 3px;
+    padding: 5px;
+}
+footer{
+    display: flex;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    
+    
+}
+.pfoot{
+    justify-content: space-around;
 }
