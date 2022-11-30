@@ -21,9 +21,10 @@ public class Principal {
 		int tam = 0, uno = 1, op = 0;
 		int desde = 0;
 		int hasta = 0;
-		int [] aleatorio;
+		int [] aleatorio;	//declarar el array
 		int suma = 0;
 		int mayor = 0,menor = 0;
+		int media  = 0;
 		
 		
 		
@@ -35,7 +36,7 @@ public class Principal {
 		System.out.println("Por favor introduzca el tamaño del array");
 		tam = Leer.datoInt();
 		
-		aleatorio = new int [tam];
+		aleatorio = new int [tam];	//instanciar
 		
 		System.out.println("*************************************************");
 		System.out.println("Por favor introduzca el número más pequeño.");
@@ -62,10 +63,10 @@ public class Principal {
 		mayor = aleatorio [0];
 		
 		for (int i = 0; i < aleatorio.length; i++) {
-			if (i < menor) {
+			if (aleatorio[i] < menor) {
 				menor = aleatorio[i];
 			}
-			if (i> mayor) {
+			if (aleatorio[i]> mayor) {
 				mayor = aleatorio[i];
 			}
 			
@@ -76,6 +77,11 @@ public class Principal {
 		System.out.println("El menor de los números es el: "+menor);
 		System.out.println("*************************************************");
 		
+		//calcular la media
+		for (int i = 0; i < aleatorio.length; i++) {
+			media = suma / aleatorio.length;	
+		}
+		System.out.println("La media seria: "+media+".");
 		
 		System.out.println("Por favor introduzca el índice del elemento que desea modificar");
 		op = Leer.datoInt();
