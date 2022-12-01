@@ -1,0 +1,19 @@
+header{
+    border: 5px;
+    padding: 1%;
+    margin: auto;
+    
+
+}
+body{
+    background-color: rgb(rgb(0, 238, 255), green, blue);
+    width: 85%;
+}
+main{
+    width: 75%;
+    margin: auto;
+}
+nav{
+    width: 25%;
+    margin: auto;
+}
