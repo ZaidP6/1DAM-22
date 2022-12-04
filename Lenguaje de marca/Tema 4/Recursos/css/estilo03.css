@@ -26,6 +26,8 @@ ul{
     font-family: 'Times New Roman', Times, serif;
     word-spacing: 2pt;
     margin: 0 auto;
+    list-style-type: none;
+    padding-left: 0pt;
 }
 body{
     background-color: rgb(185, 185, 185);
@@ -37,12 +39,14 @@ body{
 }
 nav{
     text-align: left;
-    box-sizing: 20%;
+    box-sizing: 25%;
     border: 3px;
     background-color:beige;
     padding: 8px;
     margin: 3px;
     border-radius: 5px;
+    font-size: 12pt;
+    padding-top: 60px;
 }
 main{
     margin: 3px;
