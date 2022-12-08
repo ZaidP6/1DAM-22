@@ -1,4 +1,4 @@
-package ejercicio_Examen_objetos;
+package ejercicio_examen_objetos;
 
 import utilidades.Leer;
 
@@ -7,51 +7,96 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int opcion = 0, rebaja = 0;
+		int op=0, rebajas;
 		String nombre, seccion;
-		double precioBase = 0.0;
-		boolean rebajado = false;
-		double ganancia  = 0.0;
-		
-		double [] precios  = {100.0,3200.0,3000.0};	
+		double precioBase, ganancia, descuento, libras, nuevoPrecio, topeGangas;
+		boolean rebajado=false;
+		double [] precios= {100.0, 3200.0, 300.0};
 		
 		
-		System.out.println("Bienvenido al ejercicio de prueba de examen tema3");
-		System.out.println("Escriba el nombre de producto.");
-		nombre = Leer.dato();
-		System.out.println("Escriba el precio base");
-		precioBase = Leer.datoDouble();
-		System.out.println("Escriba la sección");
-		seccion = Leer.dato();
-		System.out.println("Escriba 1 si es rebajado y 0 si no lo es");
-		rebaja = Leer.datoInt();
-		if(rebaja == 0) {
-			rebajado = true;
+		
+		System.out.println("Diga el nombre del producto");
+		nombre=Leer.dato();
+		System.out.println("Diga el precio base");
+		precioBase=Leer.datoDouble();
+		System.out.println("Diga sección");
+		seccion=Leer.dato();
+		System.out.println("Diga 1 si es rebajado o 0 si no");
+		
+		//este trozo iría en el método
+		rebajas=Leer.datoInt();
+		if(rebajas==1) {
+			rebajado=true;
 		}
+		//creamos objeto con los parámetros 
+		Producto p=new Producto(nombre,precioBase,seccion,rebajado);
 		
-		Producto p = new Producto(nombre, precioBase, seccion, rebajado);
-		
-		Switch (opcion) {
-		
-			case 1: 
-				System.out.println("Diga ganancia en porcentaje");
-				ganancia= Leer.datoDouble();
-				p.calcPVP(ganancia);
-				System.out.printf("%s", p);
-				break;
-					
-			case 6:
-				System.out.println("Mega ganga");
-				break;
+		do {
 			
+			System.out.println("1.-Para calcular el precio de venta al público");
+			System.out.println("2.-Para aplicar el descuento");
+			System.out.println("3.-Para conocer lo detalles del producto");
+			System.out.println("4.-Para conocer el precio del producto en Libras");
+			System.out.println("5.-Para modificar el precio base");
+			System.out.println("6.-Para saber si es una Mega Ganga");
+			System.out.println("7.-Para calcular el mayor precio");
+			System.out.println("0.-Para salir.");
+			
+			op=Leer.datoInt();
+			switch(op) {
+				
+			case 1:
+				System.out.println("Diga ganancia en %");
+				ganancia=Leer.datoDouble();
+				p.calcularPvp(ganancia);
+				//para mostrarlo todo del objeto. 
+				//System.out.printf("%s",p);
+				System.out.println("El precio de venta es : "+p.getPvp());
+				break;
+			case 2:
+				System.out.println("Diga la rebaja en %");
+				descuento=Leer.datoDouble();
+				p.calcularPrecioRebajado(descuento);
+				System.out.println("El precio de rebaja es : "+p.getPvp());
+				break;
+				
+			case 3:
+				
+				System.out.printf("%s",p);
+				break;
+				
+			case 4:
+				System.out.println("Diga a cuánto está el cambio en Libras");
+				libras=Leer.datoDouble();
+				System.out.printf("Precio en libras %.2f ",p.calcularLibras(libras));
+				break;
+				
+			case 5:
+				System.out.println("Diga nuevo precio");
+				nuevoPrecio=Leer.datoDouble();
+				p.setPrecioBase(nuevoPrecio);
+				break;
+				
+			case 6:
+				System.out.println("Diga el precio máximo para Ganga ");
+				topeGangas=Leer.datoDouble();
+				p.imprimirGanga(topeGangas);
 				
 			case 7:
+				System.out.printf("el más caro cuesta: €.2f ",p.calcularCaro(precios));
 				
-					
-		//default:
-			}return ganancia
-		}
-		
-	}
+			default:
+				System.out.println("Opción no válida");
+				break;
+				
+			case 0:
+				break;
+			}
+				
+			
+		}while(op!=0);
 
+	}	
+
+}
 

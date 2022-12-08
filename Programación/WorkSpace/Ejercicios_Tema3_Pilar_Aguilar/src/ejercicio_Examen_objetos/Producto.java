@@ -1,31 +1,36 @@
-package ejercicio_Examen_objetos;
+package ejercicio_examen_objetos;
 
 public class Producto {
-
+	
 	private String nombre;
 	private double precioBase;
 	private String seccion;
 	private boolean rebajado;
-	private double pvp, ganancia;
-	double porRebajas;
+	private double pvp;
 	
- int cien = 100;	public Producto(String nombre, double precioBase, String seccion, boolean rebajado, double pvp) {
-
+	public Producto(String nombre, double precioBase, String seccion, boolean rebajado, double pvp) {
+		
 		this.nombre = nombre;
 		this.precioBase = precioBase;
 		this.seccion = seccion;
 		this.rebajado = rebajado;
 		this.pvp = pvp;
-		
-
 	}
 	
+	
+
 	public Producto(String nombre, double precioBase, String seccion, boolean rebajado) {
+		super();
 		this.nombre = nombre;
 		this.precioBase = precioBase;
 		this.seccion = seccion;
 		this.rebajado = rebajado;
 	}
+	public Producto() {
+		
+	}
+
+
 
 	public String getNombre() {
 		return nombre;
@@ -67,47 +72,76 @@ public class Producto {
 		this.pvp = pvp;
 	}
 
+	@Override
 	public String toString() {
 		return "Producto [nombre=" + nombre + ", precioBase=" + precioBase + ", seccion=" + seccion + ", rebajado="
 				+ rebajado + ", pvp=" + pvp + "]";
 	}
 	
-	public double calcPVP(double ganancia) {
-		double cien = 100.00;
-		pvp = precioBase + precioBase *ganancia / cien;
+	//metodos
+	
+	public double calcularPvp(double ganancia) {
+		double cien=100.0;
+		pvp=precioBase+precioBase*ganancia/cien;
 		return pvp;
 	}
 	
-	public void mostrarDatos() {
-		System.out.println("");
+	public double calcularPrecioRebajado(double porcRebajas) {
+		double cien=100.0;
+		if(rebajado) {
+			pvp=pvp-pvp*porcRebajas/cien;	
+		}
+		return pvp;
 	}
-	
+	//falta el metodo imprimir los atributos
 	public double calcularLibras(double libras) {
+		
 		return pvp*libras;
+		
 	}
 	
+	public void imprimirGanga(double tope) {
+		
+		if(pvp<tope) {
+			System.out.println("Producto MegaGanga");
+		}else {
+			System.out.println("Producto no ganga");
+		}
+	}
 	
+	//añadimos un Array al ejercicio
+	//pasamos un array con 3 precios y nos devuelve el precio mas caro 
 	
-	public double calcularRebaja(double porRebajas) {
-		if (rebajado) {
-			
+	public double calcularCaro(double[] precio) {
+		double precioCaro=0.0;
+		for (int i = 0; i < precio.length; i++) {
+			if(precio[i]>precioCaro)
+				precioCaro=precio[i];
+			}
+		
+		return precioCaro;
+		
+	}
+	
+	public double [] calcularPreciosLibras (double[] precio, double libras) {
+	
+		for (int i = 0; i < precio.length; i++) {
+			precio[i]=precio[i]+libras;
+		}
+		return precio;
+		
+	}
+	
+	public void imprimirPrecioLibra(double[] precio) {
+		
+		for (int i = 0; i < precio.length; i++) {
+			System.out.printf("\t%.2f",precio[i]);
 		}
 		
 	}
 	
-	public void imrimirGanga() {
-		double tope = 3;
-		
-	}
-	public doubler calcularCaro() {
-	
-		double mayor =0.0;
-		for (int i = 0; i < array.length; i++) {
-			i(fprecio[i]>maryor)
-			mayor = precios[i];
-		}
-		return mayor;
-	}
 	
 	
+
 }
+

@@ -1,0 +1,98 @@
+header{
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+}
+header img{
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    height: 350px;
+}
+.div1header{
+    display: flex;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgba(173, 173, 173, 0.8);
+    height: 40px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(185, 185, 185);
+    margin: 0.5%;
+    background-repeat: no-repeat;
+    background: url(../Imagenes/fondo.jpg);  
+    background-size: cover;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.divMainAside{
+    display: flex;
+    height: 100%;
+}
+main{
+    width: 80%;
+    padding: 1.5%;
+    border: 0.5%;
+    margin: 5px;
+    background-color: rgb(247, 181, 116,0.8);
+    border-radius: 5px; 
+    display: block;
+    text-align: justify;
+}
+main img{
+    border-radius: 20px;  
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 1.5%;
+    border: 0.5%;
+    margin: 5px;
+    background-color: rgb(244, 202, 125,0.8);
+    border-radius: 5px;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+aside div img{
+    border-radius: 20px;
+    margin: 15px;
+}
+.footer0{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}
+.footer1{
+    overflow: hidden;
+    width: 30%;
+    display: inline-flex;
+    text-align: center;
+    background-color: rgba(173, 173, 173, 0.8);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}
+.footer2{
+    align-self: 10px flex-end;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    background-color: rgb(173, 173, 173,0.8);
+    align-items: center;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}
