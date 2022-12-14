@@ -62,7 +62,17 @@ public class Cuenta {
 		return "Cuenta [numero=" + numero + ", c=" + c + ", saldo=" + saldo + ", interesAnual=" + interesAnual + "]";
 	}
 	
+	public float ingresarPension(int topeEdad) {
+		saldo = saldo + c.imprimirSenior(topeEdad);
+		return saldo+c.imprimirSenior(topeEdad);
+	}
 	
+	//si no hubiese Cliente como atributo se debería pasar como parámetro al método.
+	
+	public float ingresarPensionV2 (int topeEdad, Cliente c) {
+		saldo = saldo + c.imprimirSenior(topeEdad);
+		return saldo+c.imprimirSenior(topeEdad);
+	}
 	
 	
 	

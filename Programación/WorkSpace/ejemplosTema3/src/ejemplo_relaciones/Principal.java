@@ -37,7 +37,11 @@ public class Principal {
 		topeEdad = Leer.datoInt();
 		System.out.printf("Su saldo es: %.2f€", cu.ingresarPension(topeEdad));
 		
+		//version 2
 		
+		System.out.println("Apatir de qué edad se cobra pensión?");
+		topeEdad = Leer.datoInt();
+		System.out.printf("Su saldo es: %.2f€", cu.ingresarPensionV2(topeEdad, c));
 		
 		
 	}
