@@ -39,6 +39,16 @@ public class Cliente {
 		this.edad = edad;
 	}
 	
+	public float imprimirSenior(int tope) {
+		float pension = 500;
+		if(edad >= tope) {
+			System.out.println("Cliente Senior, tiene pensión!!!");
+			return pension;
+		}else {
+			return 0;
+		}
+	}
+	
 	
 	
 }
