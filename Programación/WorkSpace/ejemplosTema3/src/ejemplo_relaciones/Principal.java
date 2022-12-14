@@ -8,11 +8,12 @@ public class Principal {
 		// TODO Auto-generated method stub
 		
 		String nombre;
-		int edad = 0;
+		int edad = 0, topeEdad;
 		Cliente c;
 		long numero = 0;
-		float saldo = 0.0;
-		float interes = 0.0;
+		float saldo;
+		float interes;
+		Cuenta cu;
 		
 		System.out.println("Diga nombre");
 		nombre = Leer.dato();
@@ -28,6 +29,13 @@ public class Principal {
 		System.out.println("Diga interés.");
 		interes = Leer.datoFloat();
 		
+		cu = new Cuenta (numero, c, saldo, interes);
+		System.out.println("Datos cliente "+cu.getC());
+		System.out.println("Datos cliente "+c);
+		
+		System.out.println("Apatir de qué edad se cobra pensión?");
+		topeEdad = Leer.datoInt();
+		System.out.printf("Su saldo es: %.2f€", cu.ingresarPension(topeEdad));
 		
 		
 		
