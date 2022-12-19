@@ -3,6 +3,7 @@ background-color:  rgb(96, 147, 243) ;
 }
 p{
 text-align: center;
+align-items: baseline;
 }
 main{
 display: flex;

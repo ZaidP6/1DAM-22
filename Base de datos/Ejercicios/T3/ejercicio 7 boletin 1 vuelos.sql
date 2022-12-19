@@ -1,7 +1,11 @@
-select *
+--1
+
+select count (*)
 from vuelos
 where  desde ilike 'Berlín' and hasta ilike 'Londres' 
 			and llegada::date between '2020-10-01' and '2020*12-31';
+			
+--2
 
 
 select id, salida, desde,  llegada, hasta, precio, 
@@ -16,16 +20,26 @@ where desde in ('Sevilla', 'Málaga') and hasta
 
 			--and salida::text ilike '2020-12%';
 			
+	--select vuelos.*, 
+		--colaesce(precio * (1 - (descuento/100)), 2), precio) as "precio_final,
+		--coalesce (descuento, 0) / 100
+
+--3
+
 select *
 from vuelos
 where descuento is null and llegada::date between '2020-10-01' and '2020-10-15' 
 				and hasta ilike 'Nueva York';
+				
+--4
 
 select *
 from vuelos
 where salida::text ilike '2021-01%' 
 		and llegada::text ilike '%09:%' 
 		and desde ilike 'Ámsterdam';
+		
+--5
 
 select id,salida,desde,llegada,hasta,precio,
 		coalesce (descuento, 0) as "descuento",
