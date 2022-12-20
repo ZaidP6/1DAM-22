@@ -2,67 +2,96 @@ body{
     background-color: bisque;
     }
     header{
-    display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        background-color: rgb(26,127,171);
+        margin: 1px;
+        padding: 2%;
+        justify-content: space-evenly;
+        color: white;
+        flex-direction: column;
+    }
+    .divmenu{
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        background-color: rgb(121, 159, 8);
+        margin: 0px;
+        padding: 2%;
+        width: 100%;
     }
     p{
-    text-align: center;
+        text-align: justify;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
     }
     nav{
-    display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
-    width: 15%;
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        background-color: rgb(26,127,171);
+        margin: 1px;
+        padding: 2%;
+        justify-content: space-evenly;
+        width: 15%;
+        flex-direction: column;
+        color: white;
     }
     main{
-    display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
-    width: 70%;
-    flex-wrap: wrap;
-    flex-direction: row;
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 1px;
+        background-color: rgb(164, 163, 162);
+        margin: 1px;
+        padding: 2%;
+        justify-content: space-evenly;
+        width: 70%;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     aside{
-    display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
-    width: 15%;
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 1px;
+        background-color:rgb(26,127,171);
+        margin: 1px;
+        padding: 2%;
+        justify-content: space-evenly;
+        width: 15%;
+        flex-direction: column;
+        text-align: center;
+        color: white;
     }
     img{
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .divimg{
+    .divpubli{
         
         display: flex;
-        flex-direction: column;
         text-align: center;
-        background-color: transparent;
-        border: 5px solid black;
-        border-radius: 15px;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 2px;
         margin: 2%;
         padding: 4px 0px;
-        width: 300px;
-        height: 300px; 
+        width: 100%;
+        align-items: center;
     }
     div.art{
         display: flex;
+    }
+    footer{
+        display: flex;
+        background-color: rgb(121, 159, 8);
+        color: white;
+        border-radius: 2px;
+        border: 3px solid transparent;
+        margin: 1px;
     }
