@@ -1,65 +1,71 @@
-body{
-    background-color: bisque;
-    }
-    header{
+@font-face {
+    font-family: TheBeast;
+    src: url(../Fonts/TheBeast.ttf);
+}
+.carrusel{
     display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
-    }
-    p{
-    text-align: center;
-    }
-    nav{
+	width: 95%;
+    height: auto;
+	margin: 0 auto;
+	justify-content: center;
+    border: 8px rgb(129, 0, 0) solid;
+
+}
+nav{
     display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
-    }
-    main{
+    flex: 1 1 10%;
+	padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 229, 161);
+}
+nav img{
     display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
+    width: 80%;
+}
+.izq{
+    border-right: 8px rgb(129, 0, 0) solid;
+}
+.principal img{
     width: 100%;
-    flex-wrap: wrap;
-    }
-    aside{
+    height: 100%;
+}
+.der{
+    border-left: 8px rgb(129, 0, 0) solid;
+}
+aside{
     display: flex;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: burlywood;
-    margin: 5px;
-    padding: 2%;
-    justify-content: space-evenly;
-    width: 20%;
-    }
-    img{
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .divimg{
-        
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: transparent;
-        border: 5px solid black;
-        border-radius: 15px;
-        margin: 2%;
-        padding: 4px 0px;
-        width: 300px;
-        height: 300px;
-        
-        
-    }
+    flex: 1 1 10%;
+	padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 229, 161);
+}
+aside img{
+    display: flex;
+    width: 80%;
+}
+footer{
+    display: flex;
+    border-bottom: 8px rgb(129, 0, 0) solid;
+    border-right: 8px rgb(129, 0, 0) solid;
+    border-left: 8px rgb(129, 0, 0) solid;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(169, 169, 169);
+}
+footer p{
+    margin: 8px;
+    text-align: left;
+    font-size: 30pt;
+    font-family: 'TheBeast', Arial, Helvetica, sans-serif;
+}
+
+.numpag{
+    display: flex;    
+    font-size: 30pt;
+    margin: 10px;
+    font-family: 'TheBeast', Arial, Helvetica, sans-serif;
+}
