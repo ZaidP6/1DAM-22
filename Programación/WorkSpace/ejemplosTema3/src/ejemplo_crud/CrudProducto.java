@@ -35,6 +35,33 @@ public class CrudProducto {
 		}
 	}
 	
+	//metodo que "borra" un producto de la lista.
+	public void delete(Producto p) {
+		int index = findProduct(p);//devuelve el índice del array.
+		if(index>=0) {
+			lista[index].setActivo(false);
+		}
+	}
+	
+	public void imprimirTodosLosProductos() {
+		for (int i = 0; i < lista.length; i++) {
+			System.out.println((i+1)+"."+lista[i]);
+		}
+	}
+	
+	public void imprimirSoloActivos() {
+		for (int i = 0; i < lista.length && lista[i]!=null; i++) {
+			if(lista[i].isActivo()) {
+				System.out.println((i+1)+"."+lista[i]);
+			}
+		}
+	}
+	
+	private int findProduct(Producto p) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	//Metodo para buscar
 	public Producto findById(String codigo) {
 		int i = 0;
