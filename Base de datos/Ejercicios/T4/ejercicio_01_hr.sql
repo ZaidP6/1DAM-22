@@ -14,7 +14,7 @@ WHERE country_name = 'United Kingdom';
 /*2 - Seleccionar el nombre de aquellos departamentos en los que trabaja 
 un empleado que fue contratado a lo largo del año 1993.*/
 
-SELECT department_name
+SELECT DISTINCT(department_name)
 FROM departments JOIN employees USING (department_id)
 WHERE hire_date::text ILIKE '1993-%';
 
@@ -38,9 +38,10 @@ WHERE manager_id = employee_id AND last_name LIKE 'D%'
 -- Primera vez al hacerlo, creo que no termino de entender bien 
 -- la diferencia entre USING y ON.
 				
-SELECT a2.first_name
-FROM employees a2 JOIN employees a1 ON(a1.manager_id=a2.employee_id)
+SELECT a2.first_name,a2.last_name
+FROM employees a2 JOIN employees a1 ON(a2.manager_id=a1.employee_id)
 WHERE a1.last_name LIKE 'D%' OR a1.last_name LIKE 'H%' OR a1.last_name LIKE 'S%';
+
 
 
 /*5 - Seleccionar el número de familiares (dependents) que son hijos 
