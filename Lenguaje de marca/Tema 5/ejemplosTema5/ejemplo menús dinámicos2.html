@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            position: relative
+            top: -9px;
+        }
+        header{
+            width: 85%;
+            margin: 0 auto;
+            border: 5px red solid;
+            background-color: pink;
+        }
+
+        header h1{
+            text-align: center;
+            color: white;
+            font-size: 30pt;
+        }
+        nav{
+            width: 85%;
+            margin: 0 auto;
+            
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 0;
+            margin-top: 0;
+        }
+        nav ul a{
+            flex: 1 1 25%;
+            text-align: center;
+            border-color: white;
+            border-style: solid;
+            border-width: 0 5px;
+            background-color: greenyellow;
+            text-decoration: none;
+            font-size: 24pt;
+
+        }
+        nav ul li{
+            font-family: Arial, Helvetica, sans-serif;
+            /*font-size: 20pt;*/
+        }
+        nav ul a:hover{
+            background-color: rgb(47, 255, 175);
+            color: blueviolet;
+        }
+        div.boton{
+            width: 139px;
+            height: 60px;
+            padding: 5px;
+            background-image: url(../img/fondodoble.png);
+
+
+        }
+        div.boton:hover{
+            background-position: bottom;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi sitio web</h1>
+    </header>
+    <nav>
+        <ul>
+            
+            <a href="#"><li><i class="bi bi-apple"></i>Inicio</li></a>
+            <a href="#"><li>Quiénes somos</li></a>
+            <a href="#"><li>Qué hacemos</li></a>
+            <a href="#"><li>Contacto</li></a>
+        </ul>
+    </nav>
+    <div class="boton">Un Botón</div>
+</body>
+</html>

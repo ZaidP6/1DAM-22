@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        
+
+        header {
+            width: 100%;
+            height: 150px;
+            padding: 30px;
+            color: rgb(100, 102, 253);
+            /*background-image: linear-gradient(to right,  green 15%,  yellow 30%, red 50%, yellow 65%, green 80%);*/
+            /*background-image: linear-gradient(to right, rgba(123,12,60,0), rgba(123,12,60,1)); para fondos con transparencia*/
+            /*background-image: repeating-linear-gradient(to right, red, rgb(255, 94, 0) 5%, yellow 10%, green 15%, rgb(0, 89, 255) 20%, purple 25%, red 30%);*/
+           /* background-image: radial-gradient(ellipse closest-side at center, white, black);*/
+            /*background-image: repeating-radial-gradient(circle farthest-corner at 25% 50%, yellow 5%, red 10%, 
+            green 15%, purple 20%, black 25%);*/
+            background-image: radial-gradient(circle at 40.79% 53.35%, #eee59a 0, #e5e89c 8.33%, #dcea9f 16.67%, #d2eca3 25%, 
+            #c9efa8 33.33%, #bff0ae 41.67%, #b5f2b5 50%, #abf3bc 58.33%, #a1f5c4 66.67%, #97f6cc 75%, #8ef6d5 83.33%, 
+            #85f7dd 91.67%, #7cf7e6 100%);
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+
+        nav ul a {
+            flex: 1 1 auto;
+            background-color: rgb(171, 153, 255);
+            color: rgb(169, 59, 241);
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border: white solid 5px;
+            border border-bottom-width: 0px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            font-size: 15pt;
+            border-bottom-width: 0px;
+        }
+
+        main {
+            border: 5px rgb(171, 153, 255) solid;
+            padding: 2%;
+            margin-top: 0px;
+        }
+
+        nav ul a:first-child {
+            border-left-width: 0px;
+        }
+
+
+        nav ul a:last-child {
+            border-right-width: 0px;
+        }
+        nav ul a.activa{
+            background-color: aliceblue;
+            border-color: rgb(171, 153, 255);
+        }
+
+        main section {
+            display: none;
+        }
+
+        main section:target {
+            display: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Animales adorables</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="#wombat" >
+                <li>Wombat</li>
+            </a>
+            <a href="#capibara" class="activa">
+                <li>Capibara</li>
+            </a>
+            <a href="#taz">
+                <li>Demonio de Tasmania</li>
+            </a>
+            <a href="#quokka">
+                <li>Quokka</li>
+            </a>
+
+        </ul>
+    </nav>
+    <main>
+        <section id="wombat">
+            <p>Los vombátidos (Vombatidae) son una familia de marsupiales diprotodontos, conocidos comúnmente como
+                wómbats​. Se encuentran solo en Australia, incluida Tasmania, y tienen la apariencia de un oso, pequeño
+                y de patas muy cortas. Actualmente existen tres especies de wómbats con vida, todas las cuales miden
+                alrededor de un metro y pesan entre 25 y 55 kg. Su color de pelo varía del beige al marrón y del negro
+                al gris. Se considera que el pariente vivo más cercano de estas especies de wómbats es el koala, el cual
+                destaca por haberse adaptado a la vida arborícola; en comparación, los wómbats son animales mucho menos
+                especializados en cuanto a su dieta y modo de vida.</p>
+            <p><img src="../img/wombat_tipos_caracteristicas_donde_vive_y_curiosidades_25742_orig.jpg" width="25%"
+                    alt="Wombat"></p>
+        </section>
+        <section id="capibara">
+            <p>El capibara, carpincho, chigüire o perro coco (Hydrochoerus hydrochaeris)nota 1​ es una especie de
+                roedor de la familia de los cávidos, nativa de Sudamérica. Es el roedor viviente de mayor tamaño y
+                peso del mundo, del género Hydrochoerus.2​ El único otro miembro existente de ese género es el
+                capibara menor (Hydrochoerus isthmius). Sus parientes cercanos incluyen a los conejillos de indias y
+                los mocós, y está relacionado más lejanamente con el agutí, la chinchilla y el coipo. Habita
+                humedales y bosques densos y vive cerca de cuerpos de agua. Es una especie muy social y se puede
+                encontrar en grupos de hasta cien individuos, pero por lo general vive en grupos de diez a veinte
+                individuos. El animal es cazado por su carne y piel y también por la grasa de su piel gruesa y
+                grasosa</p>
+            <p><img src="../img/Capivara(Hydrochoerus_hydrochaeris).jpg" width="25%" alt="Capibara"></p>
+        </section>
+        <section id="taz">
+            <p>El diablo o demonio de Tasmania (Sarcophilus harrisii) es una especie de marsupial dasiuromorfo de la
+                familia Dasyuridae. En la actualidad solo se encuentra en estado silvestre en la isla de Tasmania, al
+                sur de Australia continental.
+
+                Es el marsupial carnívoro de mayor tamaño existente en la actualidad, tras la extinción del lobo
+                marsupial. Su tamaño es como el de un perro pequeño, con un cuerpo robusto y musculoso y su piel está
+                cubierta de pelo negro. Se caracteriza por su desagradable olor, por su grito muy fuerte e inquietante,
+                así como por su ferocidad cuando se alimenta, de ahí su nombre común. Puede cazar sus propias presas
+                pero también se alimenta de carroña, así como de productos domésticos si hay humanos viviendo cerca. Por
+                lo general es un animal solitario, pero a veces se alimentan en grupos. A diferencia de la mayor parte
+                de los demás dasiúridos, se termorregulan con eficacia y son activos a pleno día sin sobrecalentarse. A
+                pesar de su aspecto corpulento, puede desarrollar una velocidad sorprendente, y puede subirse a los
+                árboles y nadar por los ríos.
+            </p>
+            <p><img src="../img/1024px-Sarcophilus_harrisii_taranna.jpg" width="25%" alt="Demonio de tasmania"></p>
+
+        </section>
+        <section id="quokka">
+            <p>El quokka (Setonix brachyurus, /ˈkwɒkə/)1​ es un pequeño Macropodidae del tamaño de un gato doméstico. Es
+                el único miembro del género Setonix. Al igual que otros marsupiales de la familia de los macrópodos
+                (como los canguros y los ualabíes), el quokka es herbívoro y principalmente nocturno.2​Los quokkas se
+                encuentran en las islas más pequeñas frente a la costa de la Australia Occidental, particularmente en la
+                Isla Rottnest. También existen poblaciones aisladas y dispersas en bosques y brezales costeros entre
+                Perth y Albany. Una pequeña colonia habita en un área protegida de la Reserva Natural Two Peoples Bay,
+                donde coexiste con el Potorous tridactylus de Gilbert.3​ Desafortunadamente este adorable marsupial se
+                encuentra en crítico peligro de extinción. Por lo que aparece en la lista roja de la UICN, como especie
+                vulnerable.</p>
+                <p><img src="../img/Setonix_brachyurus.jpg" width="25%" alt="Quokka"></p>
+        </section>
+
+
+ 
+    </main>
+</body>
+
+</html>
