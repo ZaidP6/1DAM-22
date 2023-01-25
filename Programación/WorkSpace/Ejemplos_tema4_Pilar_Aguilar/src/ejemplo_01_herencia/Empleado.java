@@ -9,9 +9,10 @@ public class Empleado extends Superclase_trabajador {
 	
 	
 
-	public Empleado(String nombre, String puesto, String direcccion, int telefono, int nSS, double sueldo,
-			double impuestos) {
-		super(nombre, puesto, direcccion, telefono, nSS);
+
+
+	public Empleado(String nombre, String puesto, double sueldo, double impuestos) {
+		super(nombre, puesto);
 		this.sueldo = sueldo;
 		this.impuestos = impuestos;
 	}
@@ -32,6 +33,10 @@ public class Empleado extends Superclase_trabajador {
 		this.impuestos = impuestos;
 	}
 
+	public double calcularPaga(int numHijos) {
+		double divisor = 100.0;
+		return (sueldo-sueldo*impuestos/divisor)+super.calcularPaga(numHijos);
+	}
 
 
 
