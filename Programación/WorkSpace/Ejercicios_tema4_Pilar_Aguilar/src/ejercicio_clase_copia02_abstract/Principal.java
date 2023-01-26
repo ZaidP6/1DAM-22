@@ -28,7 +28,7 @@ public class Principal {
         	switch (op) {
 				case 1:
 					
-					 doc.imprimirDoc();
+					 //doc.imprimirDoc();
 					
 					break;
 				case 2:
