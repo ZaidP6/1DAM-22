@@ -24,10 +24,26 @@ from categories join products using(category_id)
 group by category_name
 order by count(product_id) desc
 limit 1;
+
 -- 4. Si suponemos que nuestro margen de beneficio con los productos es de 
 -- un 25% (es decir, el 25% de su precio, son beneficios, y el 75% son costes), 
 -- calcular la cantidad de beneficio que hemos obtenido, agrupado por categoría 
 -- y producto. Las cantidades deben redondearse a dos decimales.
+
+select distinct category_name, product_name, 
+			round(sum(products.unit_price::numeric*25/100),2) as "ganancia"
+from categories join products using(category_id)
+				join order_details using(product_id)
+				join orders using(order_id)
+group by category_name, product_name
+order by ganancia desc;
+
 -- 5. Selecciona aquellos clientes (CUSTOMERS) para los que todos los envíos 
 -- que ha recibido (sí, todos) los haya transportado (SHIPPERS) la empresa 
 -- United Package.
+
+select distinct c.company_name
+from customers c right join orders using (customer_id)
+				full join shippers s on(ship_via= s.shipper_id)
+where s.company_name = 'United Package'
+group by c.company_name;
