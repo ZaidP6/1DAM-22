@@ -55,6 +55,7 @@
             border: 5px #40bdc3 rgba(64, 189, 195, 255) solid;
             padding: 2%;
             margin-top: 0px;
+            display: flex;
         }
 
         nav ul a:first-child {
@@ -72,12 +73,18 @@
 
         }
 
-        main section {
-            display: none;
-        }
+       
 
-        main section:target {
-            display: inherit;
+        div .con1{
+           width: 35%;
+            display: flex;
+            justify-content: space-around;
+        }
+        div .con2{
+           width: 35%;
+            display: flex;
+            justify-content:center;
+            
         }
     </style>
 </head>
@@ -112,29 +119,42 @@
         </ul>
     </nav>
     <main>
-        <section id="home">
-
-        </section>
-        <section id="quienesSomos">
-
-        </section>
-        <section id="donde">
-
-        </section>
-        <section id="noticias">
-
-        </section>
-        <section id="descargas">
-
-        </section>
-        <section id="galeria">
-
-        </section>
-        <section id="contacto">
-
-        </section>
-
-
+        <div class="con1">
+            <h1>Contacto</h1>
+        <p>
+            Centralita: 954 613 897
+        </p>
+        <p>Móvil: 606 102 870</p>
+        <p>Fax: 954 610 600</p>
+        <h1>
+            Horario
+        </h1>
+        <h3>
+            Invierno (16 septiembre – 14 junio):
+        </h3>
+        <p>
+            Mañanas: de 9:00 a 14:30h
+        </p>
+        <p> Tardes: de 17:00 a 20:00h</p>
+        <p>Viernes: de 9.00 a 15.00h.</p>
+        <p>Atención telefónica a partir de las 10:00h.</p>
+        <h3>
+            Verano (15 junio – 15 septiembre):
+        </h3>
+        <p>
+            Mañanas: de 8:00 a 15:00h
+        </p>
+        <p>
+            Atención telefónica a partir de las 9:00h.
+        </p>
+        </div>
+        <div class="con2">
+            <h1>Emails de contacto</h1>
+            <p>Secretario General: <a href="mmartin@famotos.com">mmartin@famotos.com</a></p>
+            <p>Gabinete de Prensa: <a href=" prensa@famotos.com"> prensa@famotos.com</a></p>
+            <p>Inscripciones/Contabilidad: <a href="info@famotos.com">info@famotos.com</a></p>
+            <p>Licencias/Reglamentos/Médicos: <a href=" anamaria@famotos.com"> anamaria@famotos.com</a></p>
+        </div>
 
     </main>
 </body>
