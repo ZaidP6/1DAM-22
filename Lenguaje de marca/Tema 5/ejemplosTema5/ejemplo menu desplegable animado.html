@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+
+    nav>ul{
+        display: flex;
+        list-style-type:none;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 0
+    }
+    nav>ul li{
+        flex: 1 1 25%;
+        text-align: center;
+        border-color: white;
+        border-style: solid;
+        border-width: 0 5px;
+        background-color: lightgoldenrodyellow;
+        text-decoration: none;
+        color: green;
+        height: 50px;
+        transition: all 3s 0.5s;
+
+    }
+    nav>ul>li>ul>li{
+        height: 0px;
+        /*font-size: 0pt;*/
+        overflow: hidden;
+        transition: height 2s, font-size 0.2s;
+    }
+    nav>ul>li:hover>ul>li{
+        height: 50px;
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>Primero
+                    <ul>
+                        <li>opcion 1.1</li>
+                        <li>Opcion 1.2</li>
+                        <li>Opcion 1.3</li>
+                    </ul>
+                </li>
+                <li>Segundo</li>
+                <li>Tercero</li>
+            </ul>
+        </nav>
+    </body>
+    </html>

@@ -2,173 +2,85 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio07</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio07</title>
+    <style type="text/css"> 
+
+    nav>ul{
+        display: flex;
+        list-style-type:none;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 0
     }
-
-    header {
-      margin-top: 10px;
-      width: 100%;
-      overflow: hidden;
-      height: 150px;
-      position: relative;
+    nav>ul li{
+        flex: 1 1 25%;
+        text-align: center;
+        justify-content: center;
+        border-color: rgb(0, 0, 0);
+        border-style: solid;
+        border-width: 0 5px;
+        background-color: rgb(47, 141, 179);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        height: 50px;
+        transition: all 3s 0.5s;
+        justify-content: space-between;
     }
-
-    nav {
-      top: -20px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 20px auto;
-      max-width: 1000px;
-      width: 90%;
+    nav>ul>li>ul>li{
+        height: 0px;
+        /*font-size: 0pt;*/
+        overflow: hidden;
+        transition: height 1.5s, font-size 0.2s;
+        border-color: rgba(255, 255, 255, 0);
     }
-
-    nav ul {
-      list-style: none;
+    nav>ul>li:hover>ul>li{
+        height: 50px;
     }
-
-    nav>ul {
-      display: table;
-      width: 100%;
-      background: #000;
-      position: relative;
-    }
-
-    nav>ul li {
-      display: table-cell;
-    }
-
-    /*Sub-menu*/
-    nav>ul>li:hover>ul {
-      display: block;
-      height: 100%;
-    }
-
-    nav>ul>li>ul {
-      display: block;
-      position: absolute;
-      background: #000;
-      left: 0;
-      right: 0;
-      overflow: hidden;
-      height: 0%;
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-      -o-transition: all .3s ease;
-      transition: all .3s ease;
-    }
-
-    nav>ul li a {
-      color: #fff;
-      display: block;
-      line-height: 20px;
-      padding: 20px;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-      -o-transition: all .3s ease;
-      transition: all .3s ease;
-    }
-
-    nav>ul>li>ul>li a:hover {
-      background: #5da5a2;
-    }
-
-    nav>ul>li>a span {
-      background: #174459;
-      display: block;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      position: absolute;
-      top: -55px;
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-      -o-transition: all .3s ease;
-      transition: all .3s ease;
-    }
-
-    nav>ul>li>a span .icon {
-      display: block;
-      line-height: 60px;
-      align-items: center;
-    }
-
-    nav>ul>li>a:hover>span {
-      top: 0;
-    }
-
-    /*Colores*/
-    nav ul li a .primero {
-      background: #0e5061;
-    }
-
-    nav ul li a .segundo {
-      background: #5da5a2;
-    }
-
-    nav ul li a .tercero {
-      background: #f25724;
-    }
-
-    nav ul li a .cuarto {
-      background: #174459;
-    }
-
-    nav ul li a .quinto {
-      background: #37a4d9;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#"><span class="primero"><i class="bi bi-house-door-fill"></i></span>Inicio</a></li>
-        <li><a href="#"><span class="segundo"><i class="bi bi-tag-fill"></i></span>Categorias</a>
-          <ul>
-            <li><a href="#">Fútbol</a></li>
-            <li><a href="#">Baloncesto</a></li>
-            <li><a href="#">Tenis</a></li>
-            <li><a href="#">Natación</a></li>
-            <li><a href="#">Ciclismo</a></li>
-          </ul>
-        </li>
-        <li><a href="#"><span class="tercero"><i class="bi bi-tools"></i></span>Servicios</a>
-          <ul>
-            <li><a href="#">Reparación de artículos</a></li>
-            <li><a href="#">Devoluciones</a></li>
-            <li><a href="#">Garantías</a></li>
-            <li><a href="#">Envío a domicilio</a></li>
-            <li><a href="#">Amazon Locker</a></li>
-          </ul>
-        </li>
-        <li><a href="#"><span class="cuarto"><i class="bi bi-person-circle"></i></span>Acerca de</a>
-          <ul>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Horario</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Nuestras tiendas</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-</body>
-
-</html>
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>Deportes de raqueta
+                    <ul>
+                        <li>Pádel</li>
+                        <li>Tenis</li>
+                        <li>Tenis de mesa</li>
+                        <li>Badminton</li>
+                        <li>Squash</li>
+                    </ul>
+                </li>
+                <li>Deportes de balón
+                    <ul>
+                        <li>Fútbol</li>
+                        <li>Baloncesto</li>
+                        <li>Rugby</li>
+                        <li>Balonmano</li>
+                        <li>Fútbol americano</li>
+                    </ul>
+                </li>
+                <li>Deportes en el agua
+                    <ul>
+                        <li>Natación</li>
+                        <li>Piragua</li>
+                        <li>Remo</li>
+                        <li>Pádelsurf</li>
+                        <li>Surf</li>
+                    </ul>
+                </li>
+                <li>Deportes sobre ruedas
+                    <ul>
+                        <li>Cliclismo</li>
+                        <li>Motociclismo</li>
+                        <li>Motocross</li>
+                        <li>Patinetes</li>
+                        <li>Skate</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+    </html>
