@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>PC Regalo</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+		/*ESTILOS PARA EL EJERCICIO 1*/				
+		nav ul {
+			display: flex;
+			flex-direction: row;
+			margin: auto;
+            list-style-type: none;
+            justify-content: space-evenly;
+		}
+
+		nav{
+			display: flex;
+			height: 25px;
+			width: 100%;
+			margin: 0;
+			padding-top: 38px;
+			padding-left: 10px;
+			padding-right: 10px;
+			justify-content: space-evenly;
+			flex-direction: row;
+   		}
+		nav div{
+			background-image: url(./img/logo_ejercicio1.png);
+		}
+		nav>ul>div:hover{
+				background-position: 105px top;
+				border-radius: 10pt;
+		}
+
+		nav ul li{
+				display: flex;
+				flex-direction: row;
+				margin: auto;
+				padding-left: 10px;
+				padding-right: 10px;
+				list-style-position: inside;
+				list-style-type: none;
+				justify-content: space-between;
+			}
+
+		/*ESTILOS PARA LOS EJERCICIOS 2 y 3 (añade lo que necesites)*/
+		footer{
+			position: fixed;
+			bottom: 0px;
+			height: 200px;
+			width: 100%;
+			background-image:linear-gradient, (to right,lightblue, #023484);
+			display: flex;
+			align-items: flex-end;
+			flex-direction: column;
+			text-align: right;
+		}
+		footer p{
+			width: 20%;
+			font-family: "Comic Sans MS";
+			font-size: 12pt;
+			padding-right: 20px;
+		}
+		footer p+p{
+			background-color: #023484;
+			color: white;
+			border-radius: 15px;
+			
+		}
+
+		footer>p>img:target {
+      		display: block;
+      		height: 100%;
+			transition: 1.5s ease;
+    }
+
+		
+	</style>
+</head>
+<body>
+
+	<!--HTML PARA EL EJERCICIO 1. No puedes modificar este código, ni siquiera para añadir clases o id-->
+	<nav>
+		<ul>	
+			<div></div>
+			<li>INICIO</li>		
+		</ul>
+		<ul>			
+			<li>Buscar</li>		
+			<li>Contacto</li>
+			<li>Productos</li>		
+		</ul>
+	</nav>
+
+	<h1>Pilar Aguilar Díaz</h1>
+
+	<!--HTML PARA LOS EJERCICIOS 2 y 3. No puedes modificar este código, ni siquiera para añadir clases o id-->
+	<footer>
+		<p><img src="img/iconoWhatsapp.png"></p>
+		<p>Si quieres hablar con nosotros, escríbenos un whatsapp al 666333444 o un correo a info@pcregalo.com</p>
+	</footer>
+</body>
+</html>
