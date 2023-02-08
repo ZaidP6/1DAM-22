@@ -8,5 +8,11 @@
     <fullyQualifiedTypeName name="ejercicio01.Ordenador"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="ejercicio04.Electronica"/>
+    <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+    <fullyQualifiedTypeName name="ejercicio06.CuentaCorriente"/>
+    <fullyQualifiedTypeName name="ejercicio06.CuentaJoven"/>
+    <fullyQualifiedTypeName name="ejercicio06.CuentaEmpresa"/>
     <fullyQualifiedTypeName name="utilidades.Leer"/>
 </qualifiedTypeNameHistroy>
