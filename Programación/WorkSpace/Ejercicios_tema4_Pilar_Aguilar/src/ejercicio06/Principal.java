@@ -33,7 +33,7 @@ public class Principal {
 	Oficina ofi;
 	int tam = 3, op = 0;
 	double cantIngresada = 0.0, cantRetirada = 0.0;
-	
+	int id = 0;
 	
 		
 	
@@ -42,6 +42,7 @@ public class Principal {
 	listaCuentas[1]= new CuentaJoven("Manolo", 0002, 500.65, 0.0);
 	listaCuentas[2]= new CuentaEmpresa("Azulejos S.L", 0003, 50000.43, 0);
 	
+	ofi = new Oficina (listaCuentas);
 	
 	do {
 		System.out.println("Elija una opción");
@@ -50,11 +51,11 @@ public class Principal {
 		
 		switch (op) {
 			case 1:
+				System.out.println("indique el id de la cuenta");
+				id = Leer.datoInt();				
 				System.out.println("Indique la cantidad que va a ingresar");
 				cantIngresada = Leer.datoDouble();
-				for (int i = 0; i < listaCuentas.length; i++) {
-					listaCuentas[i].ingresarDinero(cantIngresada);
-				}
+				ofi.ingresarSaldoCuenta(ofi.findById(id), cantIngresada);
 				
 				break;
 			
@@ -67,18 +68,21 @@ public class Principal {
 				break;
 				
 			case 3: 
-				//System.out.println(ofi.calcularTotalCuentas());
+				System.out.println(ofi.calcularTotalCuentas());
 				break;
 			case 4:
-				//ofi.calcularGanancias(cantIngresada);
+				System.out.println(ofi.calcularGanancias(cantIngresada));;
 				break;
 				
 			case 5:
-				//ofi.calcularPerdidas(cantIngresada);
+				System.out.println(ofi.calcularPerdidas(cantIngresada));;
 				break;
 				
+			case 6:
+				ofi.mostrarCuentas();
+				break;
 			case 0:
-				System.out.println("Gracias por usar el prgrama");
+				System.out.println("Gracias por usar el programa");
 				break;
 			default:
 				System.out.println("ERROR");
@@ -98,6 +102,7 @@ public class Principal {
 		System.out.println("3 - Total dinero en oficina");
 		System.out.println("4 - Total ganancias oficina");
 		System.out.println("5 - Total perdidas oficina");
+		System.out.println("6 - Mostrar las cuentas");
 		System.out.println("0 - Salir");
 		System.out.println("**********************************");
 	}

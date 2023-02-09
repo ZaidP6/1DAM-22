@@ -38,7 +38,7 @@ public class Oficina {
 		for (int i = 0; i < listaCuentas.length && listaCuentas[i] != null; i++) {
 			//ganancia += listaCuentas[i].
 			if (listaCuentas[i] instanceof CuentaEmpresa) {
-				((CuentaEmpresa)listaCuentas[i]).retirarDinero(cantRetirada);
+				((CuentaEmpresa)listaCuentas[i]).retirarDinero(cantRetirada);;
 				ganancia++;
 			}
 		}
@@ -80,5 +80,14 @@ public class Oficina {
 		}
 	}
 	
+	public void mostrarCuentas() {
+		for (int i = 0; i < listaCuentas.length && listaCuentas[i] != null; i++) {
+			System.out.println(listaCuentas[i]);
+		}
+	}
 	
+	public void ingresarSaldoCuenta (Cuenta c, double ingreso) {
+		c.ingresarDinero(ingreso);
+	}
+
 }

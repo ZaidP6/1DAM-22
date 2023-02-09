@@ -14,5 +14,8 @@
     <fullyQualifiedTypeName name="ejercicio06.CuentaCorriente"/>
     <fullyQualifiedTypeName name="ejercicio06.CuentaJoven"/>
     <fullyQualifiedTypeName name="ejercicio06.CuentaEmpresa"/>
+    <fullyQualifiedTypeName name="ejercicio.EntradaNormal"/>
+    <fullyQualifiedTypeName name="ejercicio.EntradaGrupos"/>
+    <fullyQualifiedTypeName name="ejercicio.EntradaVip"/>
     <fullyQualifiedTypeName name="utilidades.Leer"/>
 </qualifiedTypeNameHistroy>
