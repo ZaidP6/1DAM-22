@@ -42,7 +42,7 @@ having (		select sum(precio + precio*10/100) as "gastado"
 					)dato
 order by dato desc;
 */
-
+-------------------------------------------------------------------
 SELECT c.nombre, apellido1, apellido2,
 		d.nombre, d.ciudad, 
 		SUM(
@@ -84,7 +84,7 @@ from operacion join inmueble using(id_inmueble)
 where tipo.nombre in('Piso') 
 group by provincia, comprador.nombre, fecha_operacion
 order by precio_venta desc;
-
+----------------------------------------------------------------------------------
 select provincia, comprador.nombre, fecha_operacion, precio_final
 from operacion join inmueble i using(id_inmueble)
 				join tipo on(tipo_inmueble=id_tipo)
@@ -116,7 +116,23 @@ from operacion join inmueble using(id_inmueble)
 				join comprador using(id_cliente)
 where tipo_operacion in('Alquiler')
 group by provincia, fecha_alta;
+----------------------------------------------------------------------
 
-
+SELECT i1.provincia, 
+	TO_CHAR(o1.fecha_operacion, 'TMMonth'),
+	i1.*, o1.precio_final
+FROM inmueble i1 JOIN operacion o1 USING (id_inmueble)
+WHERE tipo_operacion = 'Alquiler'
+  AND precio_final <= ALL (
+  	SELECT precio_final
+	FROM inmueble i2 JOIN 
+	  	operacion o2 USING (id_inmueble)
+	WHERE tipo_operacion = 'Alquiler'
+	  AND i1.provincia = i2.provincia
+	  AND EXTRACT(month FROM o1.fecha_operacion) =
+	  		EXTRACT(month FROM o2.fecha_operacion)  
+  )
+ORDER BY i1.provincia, 
+	EXTRACT(month FROM o1.fecha_operacion);
 
 
