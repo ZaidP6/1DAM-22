@@ -26,7 +26,7 @@ public class Principal {
 		
 		List <Integer> lista3 = new ArrayList<Integer>();
 		
-		System.out.println(lista2.add());
+		System.out.println(lista2);
 		System.out.println(lista2);
 		
 		

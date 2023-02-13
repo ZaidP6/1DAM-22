@@ -155,8 +155,41 @@ order by count(id_reserva)::numeric * round((precio -precio*coalesce(descuento, 
 )
 -- faltaria consulta multiplicando ptotal_asientos_vendidos por 0.3 y 0.7 para calcular el de mas beneficio 
 -- y de mas gasto.
+----------------------------------------------------------------------------------------------
 
-
+WITH beneficio_por_trayecto AS (
+	SELECT d.ciudad as "desde", h.ciudad as "hasta",
+			SUM(COALESCE(precio * (1-(descuento::numeric/100)),precio) * 0.3) as "beneficio"
+	FROM vuelo JOIN reserva USING (id_vuelo)
+				JOIN aeropuerto d ON (desde = d.id_aeropuerto)
+				JOIN aeropuerto h ON (hasta = h.id_aeropuerto)
+	GROUP BY d.ciudad, h.ciudad
+), beneficio_maximo AS (
+	SELECT MAX(beneficio) as "maximo"
+	FROM beneficio_por_trayecto
+), beneficio_minimo AS (
+	SELECT MIN(beneficio) as "minimo"
+	FROM beneficio_por_trayecto
+), trayecto_beneficio_maximo AS (
+	SELECT *, 'max'
+	FROM beneficio_por_trayecto
+	WHERE beneficio = (
+					SELECT maximo
+					FROM beneficio_maximo
+					)
+), trayecto_beneficio_minimo AS (
+	SELECT *, 'min'
+	FROM beneficio_por_trayecto
+	WHERE beneficio = (
+					SELECT minimo
+					FROM beneficio_minimo
+					)	
+)
+SELECT *
+FROM trayecto_beneficio_maximo
+UNION
+SELECT *
+FROM trayecto_beneficio_minimo;
 
 -- 4. Seleccionar el nombre y apellidos de los clientes que no han hecho ninguna 
 -- reserva para un vuelo que salga en el tercer trimestre desde Sevilla.
@@ -167,6 +200,22 @@ from cliente left join reserva using(id_cliente)
 				left join aeropuerto on(desde = id_aeropuerto)
 where aeropuerto.ciudad != 'Sevilla' and to_char(salida, 'MM') in('01','02','03','07','08','09','10','11','12')
 		--and id_reserva is null;
+
+--------------------------------------------------------------------------------------------
+WITH reservas_sevilla_3trim AS (
+	SELECT id_cliente
+	FROM reserva JOIN vuelo USING (id_vuelo)
+				JOIN aeropuerto ON (desde = id_aeropuerto)
+	WHERE ciudad = 'Sevilla' AND TO_CHAR(salida, 'Q') = '3'
+)
+SELECT DISTINCT nombre, apellido1, apellido2
+FROM cliente JOIN reserva USING (id_cliente) 
+WHERE id_cliente NOT IN 
+			(
+			 SELECT id_cliente
+			 FROM reservas_sevilla_3trim
+			);
+
 
 
 -- 5. Selecciona el nombre y apellidos de aquellos clientes cuyo gasto en reservas 
@@ -196,4 +245,6 @@ from aeropuerto join vuelo on(id_aeropuerto=desde)
 where desde between 1 and 4 or desde in('11')
 group by id_cliente, precio, descuento;
 -- A esto habría que sacarle el total con sum y tendría que ser mayor que lo explicado en la consulta anterior.				
-				
+
+--------------------------------------------------------------------------------------------------------------
+
