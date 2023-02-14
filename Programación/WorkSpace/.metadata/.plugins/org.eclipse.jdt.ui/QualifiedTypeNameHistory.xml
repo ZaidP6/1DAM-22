@@ -17,9 +17,10 @@
     <fullyQualifiedTypeName name="ejercicio.EntradaNormal"/>
     <fullyQualifiedTypeName name="ejercicio.EntradaGrupos"/>
     <fullyQualifiedTypeName name="ejercicio.EntradaVip"/>
-    <fullyQualifiedTypeName name="utilidades.Leer"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="ejercicio01.GestionNotas"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="utilidades.Leer"/>
 </qualifiedTypeNameHistroy>
