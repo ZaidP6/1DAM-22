@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        colgroup {
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            font-family: arial, helvetica, sans-serif;
+            line-height: 1.42857143;
+            color: #333;
+            font-size: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: border-box;
+        }
+
+        thead {
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            font-family: arial, helvetica, sans-serif;
+            line-height: 1.42857143;
+            color: #333;
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            background: 0 0;
+        }
+
+        tr.TEF {
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            font-family: arial, helvetica, sans-serif;
+            line-height: 1.42857143;
+            color: #333;
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            background: 0 0;
+        }
+
+        th {
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            font-family: arial, helvetica, sans-serif;
+            line-height: 1.42857143;
+            color: #333;
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            background: 0 0;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <h1>Clasificación Fútbol Liga Española</h1>
+    <div class="container content">
+
+        <nav class="cont-botones clasificacion hide cf">
+            <ul class="clasificacion-tabs">
+                <li><a href="#clasificacion-total" class="btn-nav btn tipo-4 active">Total</a></li>
+                <li><a href="#clasificacion-casa" class="btn-nav btn tipo-4">En casa</a></li>
+                <li><a href="#clasificacion-fuera" class="btn-nav btn tipo-4">Fuera</a></li>
+            </ul>
+        </nav>
+
+        <div class="clasificacion-total clasificacion-tab" id="clasificacion-total">
+            <div class="cont-modulo">
+                <h1 class="tit-modulo">
+                    <span>Clasificación</span>
+                    <span class="tit-subtitle-info">LaLiga Santander 2022/2023</span>
+                </h1>
+                <div class="cont-clasificacion completa cf">
+                    <table class="tabla-datos table-hover">
+                        <!-- table header for total resource -->
+                        <caption>
+                            Clasificación total</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col class="hidden-xs">
+                            <col class="hidden-xs">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs">
+                            <col class="hidden-xs">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs hidden-sm">
+                            <col class="hidden-xs">
+                            <col class="hidden-xs">
+                        </colgroup>
+                        <thead>
+                            <tr class="agrup hidden-xs hidden-sm">
+                                <th class="no-border"></th>
+                                <th colspan="7">Total</th>
+                                <th colspan="7">En casa</th>
+                                <th colspan="7">Fuera</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">
+                                    <p class="hide">Equipo</p>
+                                </th>
+
+                                <th scope="col" class="destacado"><abbr title="Puntos">Pts.</abbr></th>
+                                <th scope="col"><abbr title="Partidos jugados">PJ</abbr></th>
+                                <th scope="col"><abbr title="Partidos ganados">PG</abbr></th>
+                                <th scope="col"><abbr title="Partidos empatados">PE</abbr></th>
+                                <th scope="col"><abbr title="Partidos perdidos">PP</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles a favor">GF</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles en contra">GC</abbr></th>
+
+                                <th scope="col" class="destacado hidden-xs hidden-sm"><abbr title="Puntos">Pts.</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos jugados">PJ</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos ganados">PG</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos empatados">PE</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos perdidos">PP</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles a favor">GF</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles en contra">GC</abbr></th>
+                                <th scope="col" class="destacado hidden-xs hidden-sm"><abbr title="Puntos">Pts.</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos jugados">PJ</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos ganados">PG</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos empatados">PE</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs hidden-sm"><abbr title="Partidos perdidos">PP</abbr>
+                                </th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles a favor">GF</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles en contra">GC</abbr></th>
+
+                            </tr>
+                        </thead>
+
+                        <!-- table body for total resource -->
+
+                        <tbody>
+
+                            <tr class="zone-top-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">1</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/barcelona/3/"
+                                        title="Barcelona: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Barcelona" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Barcelona</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">56</td>
+                                <td>21</td>
+                                <td>18</td>
+                                <td>2 </td>
+                                <td>1</td>
+                                <td class="hidden-xs">43</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="destacado2 hidden-xs hidden-sm">26</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">8</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">1</td>
+                                <td class="destacado2 hidden-xs hidden-sm">30</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs">21</td>
+                                <td class="hidden-xs">6</td>
+                            </tr>
+
+                            <tr class="zone-top-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">2</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/real_madrid/1/"
+                                        title="Real Madrid: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Real Madrid" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Real Madrid</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">48</td>
+                                <td>21</td>
+                                <td>15</td>
+                                <td>3 </td>
+                                <td>3</td>
+                                <td class="hidden-xs">44</td>
+                                <td class="hidden-xs">17</td>
+                                <td class="destacado2 hidden-xs hidden-sm">24</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">7</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="destacado2 hidden-xs hidden-sm">24</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">8</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr class="zone-top-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">3</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/r_sociedad/16/"
+                                        title="R. Sociedad: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera R. Sociedad" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">R. Sociedad</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">42</td>
+                                <td>21</td>
+                                <td>13</td>
+                                <td>3 </td>
+                                <td>5</td>
+                                <td class="hidden-xs">31</td>
+                                <td class="hidden-xs">21</td>
+                                <td class="destacado2 hidden-xs hidden-sm">17</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="destacado2 hidden-xs hidden-sm">25</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">8</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr class="zone-top-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">4</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/atletico/42/"
+                                        title="Atlético: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Atlético" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Atlético</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">38</td>
+                                <td>21</td>
+                                <td>11</td>
+                                <td>5 </td>
+                                <td>5</td>
+                                <td class="hidden-xs">30</td>
+                                <td class="hidden-xs">17</td>
+                                <td class="destacado2 hidden-xs hidden-sm">15</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">10</td>
+                                <td class="destacado2 hidden-xs hidden-sm">23</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">7</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">7</td>
+                            </tr>
+
+                            <tr class="zone-top-2">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">5</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/betis/171/"
+                                        title="Betis: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Betis" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Betis</span>
+                                    </a>
+                                    <span class="sube s-right">2</span>
+                                </th>
+                                <td class="destacado">34</td>
+                                <td>21</td>
+                                <td>10</td>
+                                <td>4 </td>
+                                <td>7</td>
+                                <td class="hidden-xs">27</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="destacado2 hidden-xs hidden-sm">17</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">16</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="destacado2 hidden-xs hidden-sm">17</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="hidden-xs">11</td>
+                            </tr>
+
+                            <tr class="zone-top-3">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">6</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/rayo/2/"
+                                        title="Rayo: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Rayo" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Rayo</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">33</td>
+                                <td>21</td>
+                                <td>9</td>
+                                <td>6 </td>
+                                <td>6</td>
+                                <td class="hidden-xs">28</td>
+                                <td class="hidden-xs">23</td>
+                                <td class="destacado2 hidden-xs hidden-sm">17</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="destacado2 hidden-xs hidden-sm">16</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">13</td>
+                                <td class="hidden-xs">12</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">7</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/athletic/5/"
+                                        title="Athletic: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Athletic" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Athletic</span>
+                                    </a>
+                                    <span class="sube s-right">1</span>
+                                </th>
+                                <td class="destacado">32</td>
+                                <td>21</td>
+                                <td>9</td>
+                                <td>5 </td>
+                                <td>7</td>
+                                <td class="hidden-xs">31</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="destacado2 hidden-xs hidden-sm">20</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">16</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="destacado2 hidden-xs hidden-sm">12</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">15</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">8</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/villarreal/19/"
+                                        title="Villarreal: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Villarreal" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Villarreal</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">31</td>
+                                <td>21</td>
+                                <td>9</td>
+                                <td>4 </td>
+                                <td>8</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">18</td>
+                                <td class="destacado2 hidden-xs hidden-sm">19</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">14</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="destacado2 hidden-xs hidden-sm">12</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">9</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/osasuna/13/"
+                                        title="Osasuna: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Osasuna" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Osasuna</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">30</td>
+                                <td>21</td>
+                                <td>8</td>
+                                <td>6 </td>
+                                <td>7</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="destacado2 hidden-xs hidden-sm">18</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">9</td>
+                                <td class="destacado2 hidden-xs hidden-sm">12</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">10</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/mallorca/11/"
+                                        title="Mallorca: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Mallorca" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Mallorca</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">28</td>
+                                <td>21</td>
+                                <td>8</td>
+                                <td>4 </td>
+                                <td>9</td>
+                                <td class="hidden-xs">16</td>
+                                <td class="hidden-xs">20</td>
+                                <td class="destacado2 hidden-xs hidden-sm">17</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="destacado2 hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">11</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/girona/648/"
+                                        title="Girona: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Girona" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Girona</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">24</td>
+                                <td>21</td>
+                                <td>6</td>
+                                <td>6 </td>
+                                <td>9</td>
+                                <td class="hidden-xs">27</td>
+                                <td class="hidden-xs">31</td>
+                                <td class="destacado2 hidden-xs hidden-sm">18</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">17</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="destacado2 hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs">10</td>
+                                <td class="hidden-xs">16</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">12</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/sevilla/53/"
+                                        title="Sevilla: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Sevilla" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Sevilla</span>
+                                    </a>
+                                    <span class="sube s-right">4</span>
+                                </th>
+                                <td class="destacado">24</td>
+                                <td>21</td>
+                                <td>6</td>
+                                <td>6 </td>
+                                <td>9</td>
+                                <td class="hidden-xs">23</td>
+                                <td class="hidden-xs">29</td>
+                                <td class="destacado2 hidden-xs hidden-sm">15</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="destacado2 hidden-xs hidden-sm">9</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="hidden-xs">17</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">13</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/valladolid/18/"
+                                        title="Real Valladolid: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Real Valladolid"
+                                                onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Real Valladolid</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">24</td>
+                                <td>21</td>
+                                <td>7</td>
+                                <td>3 </td>
+                                <td>11</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">28</td>
+                                <td class="destacado2 hidden-xs hidden-sm">17</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">9</td>
+                                <td class="hidden-xs">9</td>
+                                <td class="destacado2 hidden-xs hidden-sm">7</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">7</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">14</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/celta/6/"
+                                        title="Celta: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Celta" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Celta</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">23</td>
+                                <td>21</td>
+                                <td>6</td>
+                                <td>5 </td>
+                                <td>10</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">33</td>
+                                <td class="destacado2 hidden-xs hidden-sm">13</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">13</td>
+                                <td class="hidden-xs">14</td>
+                                <td class="destacado2 hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs">9</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">15</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/almeria/85/"
+                                        title="Almería: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Almería" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Almería</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">22</td>
+                                <td>21</td>
+                                <td>6</td>
+                                <td>4 </td>
+                                <td>11</td>
+                                <td class="hidden-xs">25</td>
+                                <td class="hidden-xs">34</td>
+                                <td class="destacado2 hidden-xs hidden-sm">19</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="destacado2 hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">7</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">16</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/cadiz/91/"
+                                        title="Cádiz: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Cádiz" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Cádiz</span>
+                                    </a>
+                                    <span class="sube s-right">2</span>
+                                </th>
+                                <td class="destacado">22</td>
+                                <td>21</td>
+                                <td>5</td>
+                                <td>7 </td>
+                                <td>9</td>
+                                <td class="hidden-xs">17</td>
+                                <td class="hidden-xs">33</td>
+                                <td class="destacado2 hidden-xs hidden-sm">14</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="destacado2 hidden-xs hidden-sm">8</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="hidden-xs">18</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">17</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/espanyol/8/"
+                                        title="Espanyol: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Espanyol" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Espanyol</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">21</td>
+                                <td>21</td>
+                                <td>4</td>
+                                <td>9 </td>
+                                <td>8</td>
+                                <td class="hidden-xs">26</td>
+                                <td class="hidden-xs">33</td>
+                                <td class="destacado2 hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs">14</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="destacado2 hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr class="zone-bottom-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">18</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/valencia/17/"
+                                        title="Valencia: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Valencia" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Valencia</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">20</td>
+                                <td>21</td>
+                                <td>5</td>
+                                <td>5 </td>
+                                <td>11</td>
+                                <td class="hidden-xs">26</td>
+                                <td class="hidden-xs">26</td>
+                                <td class="destacado2 hidden-xs hidden-sm">14</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs">18</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="destacado2 hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr class="zone-bottom-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">19</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/getafe/172/"
+                                        title="Getafe: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Getafe" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Getafe</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">19</td>
+                                <td>21</td>
+                                <td>4</td>
+                                <td>7 </td>
+                                <td>10</td>
+                                <td class="hidden-xs">18</td>
+                                <td class="hidden-xs">28</td>
+                                <td class="destacado2 hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">4</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs">10</td>
+                                <td class="hidden-xs">14</td>
+                                <td class="destacado2 hidden-xs hidden-sm">9</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">2</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">5</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr class="zone-bottom-1">
+                                <th scope="row" class="cont-nombre-equipo" itemscope=""
+                                    itemtype="http://schema.org/SportsTeam">
+                                    <span class="pos">20</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/elche/121/"
+                                        title="Elche: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Elche" onload="lzld(this)"
+                                                src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png"
+                                                srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 2x"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Elche</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">9</td>
+                                <td>21</td>
+                                <td>1</td>
+                                <td>6 </td>
+                                <td>14</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">44</td>
+                                <td class="destacado2 hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs hidden-sm">10</td>
+                                <td class="hidden-xs hidden-sm">1</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">6</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">16</td>
+                                <td class="destacado2 hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">11</td>
+                                <td class="hidden-xs hidden-sm">0</td>
+                                <td class="hidden-xs hidden-sm">3</td>
+                                <td class="hidden-xs hidden-sm">8</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="hidden-xs">28</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <ul class="leyenda-clasificacion">
+                <li class="zone-top-1">
+                    <span>Champions League</span>
+                </li>
+                <li class="zone-top-2">
+                    <span>Europa League</span>
+                </li>
+                <li class="zone-top-3">
+                    <span>UEFA Conference League</span>
+                </li>
+                <li class="zone-bottom-1">
+                    <span>Descenso</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clasificacion-casa clasificacion-tab hide" id="clasificacion-casa">
+            <div class="cont-modulo">
+                <h2 class="tit-modulo">LaLiga Santander 2022/2023 - Casa</h2>
+                <div class="cont-clasificacion casa cf">
+                    <table class="tabla-datos">
+                        <!-- table header for home and away resource -->
+                        <caption>
+                            Clasificación en casa </caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <p class="hide">Equipo</p>
+                                </th>
+
+                                <th scope="col" class="destacado"><abbr title="Puntos">Pts.</abbr></th>
+                                <th scope="col"><abbr title="Partidos jugados">PJ</abbr></th>
+                                <th scope="col"><abbr title="Partidos ganados">PG</abbr></th>
+                                <th scope="col"><abbr title="Partidos empatados">PE</abbr></th>
+                                <th scope="col"><abbr title="Partidos perdidos">PP</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles a favor">GF</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles en contra">GC</abbr></th>
+                            </tr>
+                        </thead>
+                        <!-- table body for home resource -->
+
+                        <tbody>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">1</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/barcelona/3/"
+                                        title="Barcelona: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Barcelona" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Barcelona</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">26</td>
+                                <td>10</td>
+                                <td>8</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">1</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">2</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/real_madrid/1/"
+                                        title="Real Madrid: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Real Madrid" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Real Madrid</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">24</td>
+                                <td>10</td>
+                                <td>7</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">7</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">3</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/r_sociedad/16/"
+                                        title="R. Sociedad: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera R. Sociedad" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">R. Sociedad</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">17</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">11</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">4</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/atletico/42/"
+                                        title="Atlético: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Atlético" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Atlético</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">15</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">5</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/betis/171/"
+                                        title="Betis: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Betis" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Betis</span>
+                                    </a>
+                                    <span class="sube s-right">2</span>
+                                </th>
+                                <td class="destacado">17</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="hidden-xs">16</td>
+                                <td class="hidden-xs">11</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">6</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/rayo/2/"
+                                        title="Rayo: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Rayo" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Rayo</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">17</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">11</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">7</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/athletic/5/"
+                                        title="Athletic: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Athletic" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Athletic</span>
+                                    </a>
+                                    <span class="sube s-right">1</span>
+                                </th>
+                                <td class="destacado">20</td>
+                                <td>11</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="hidden-xs">16</td>
+                                <td class="hidden-xs">7</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">8</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/villarreal/19/"
+                                        title="Villarreal: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Villarreal" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Villarreal</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">19</td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td class="hidden-xs">14</td>
+                                <td class="hidden-xs">8</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">9</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/osasuna/13/"
+                                        title="Osasuna: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Osasuna" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Osasuna</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">18</td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>4</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">9</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">10</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/mallorca/11/"
+                                        title="Mallorca: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Mallorca" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Mallorca</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">17</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">6</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">11</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/girona/648/"
+                                        title="Girona: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Girona" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Girona</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">18</td>
+                                <td>11</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td class="hidden-xs">17</td>
+                                <td class="hidden-xs">15</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">12</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/sevilla/53/"
+                                        title="Sevilla: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Sevilla" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Sevilla</span>
+                                    </a>
+                                    <span class="sube s-right">4</span>
+                                </th>
+                                <td class="destacado">15</td>
+                                <td>11</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">12</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">13</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/valladolid/18/"
+                                        title="Real Valladolid: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Real Valladolid"
+                                                onload="lzld(this)" src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Real Valladolid</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">17</td>
+                                <td>11</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td class="hidden-xs">9</td>
+                                <td class="hidden-xs">9</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">14</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/celta/6/"
+                                        title="Celta: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Celta" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Celta</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">13</td>
+                                <td>11</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td class="hidden-xs">13</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">15</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/almeria/85/"
+                                        title="Almería: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Almería" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Almería</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">19</td>
+                                <td>11</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>4</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="hidden-xs">15</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">16</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/cadiz/91/"
+                                        title="Cádiz: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Cádiz" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Cádiz</span>
+                                    </a>
+                                    <span class="sube s-right">2</span>
+                                </th>
+                                <td class="destacado">14</td>
+                                <td>11</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="hidden-xs">15</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">17</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/espanyol/8/"
+                                        title="Espanyol: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Espanyol" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Espanyol</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">10</td>
+                                <td>11</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td class="hidden-xs">14</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">18</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/valencia/17/"
+                                        title="Valencia: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Valencia" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Valencia</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">14</td>
+                                <td>11</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td class="hidden-xs">18</td>
+                                <td class="hidden-xs">12</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">19</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/getafe/172/"
+                                        title="Getafe: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Getafe" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Getafe</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">10</td>
+                                <td>11</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td class="hidden-xs">10</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">20</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/elche/121/"
+                                        title="Elche: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Elche" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Elche</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">6</td>
+                                <td>10</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="clasificacion-fuera clasificacion-tab hide" id="clasificacion-fuera">
+            <div class="cont-modulo">
+                <h2 class="tit-modulo">LaLiga Santander 2022/2023 2022_2023 - Fuera</h2>
+                <div class="cont-clasificacion casa cf">
+                    <table class="tabla-datos">
+                        <!-- table header for away resource -->
+                        <caption>
+                            Clasificación fuera de casa </caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <p class="hide">Equipo</p>
+                                </th>
+
+                                <th scope="col" class="destacado"><abbr title="Puntos">Pts.</abbr></th>
+                                <th scope="col"><abbr title="Partidos jugados">PJ</abbr></th>
+                                <th scope="col"><abbr title="Partidos ganados">PG</abbr></th>
+                                <th scope="col"><abbr title="Partidos empatados">PE</abbr></th>
+                                <th scope="col"><abbr title="Partidos perdidos">PP</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles a favor">GF</abbr></th>
+                                <th scope="col" class="hidden-xs"><abbr title="Goles en contra">GC</abbr></th>
+                            </tr>
+                        </thead>
+                        <!-- table body for away resource -->
+
+                        <tbody>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">1</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/barcelona/3/"
+                                        title="Barcelona: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Barcelona" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/3.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Barcelona</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">30</td>
+                                <td>11</td>
+                                <td>10</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td class="hidden-xs">21</td>
+                                <td class="hidden-xs">6</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">2</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/real_madrid/1/"
+                                        title="Real Madrid: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Real Madrid" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/1.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Real Madrid</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">24</td>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td class="hidden-xs">22</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">3</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/r_sociedad/16/"
+                                        title="R. Sociedad: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera R. Sociedad" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/16.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">R. Sociedad</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">25</td>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td class="hidden-xs">19</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">4</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/atletico/42/"
+                                        title="Atlético: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Atlético" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/42.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Atlético</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">23</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">7</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">5</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/betis/171/"
+                                        title="Betis: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Betis" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/171.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Betis</span>
+                                    </a>
+                                    <span class="sube s-right">2</span>
+                                </th>
+                                <td class="destacado">17</td>
+                                <td>11</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="hidden-xs">11</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">6</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/rayo/2/"
+                                        title="Rayo: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Rayo" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/2.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Rayo</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">16</td>
+                                <td>11</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td class="hidden-xs">13</td>
+                                <td class="hidden-xs">12</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">7</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/athletic/5/"
+                                        title="Athletic: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Athletic" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/5.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Athletic</span>
+                                    </a>
+                                    <span class="sube s-right">1</span>
+                                </th>
+                                <td class="destacado">12</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td class="hidden-xs">15</td>
+                                <td class="hidden-xs">15</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">8</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/villarreal/19/"
+                                        title="Villarreal: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Villarreal" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/19.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Villarreal</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">12</td>
+                                <td>11</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">9</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/osasuna/13/"
+                                        title="Osasuna: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Osasuna" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/13.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Osasuna</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">12</td>
+                                <td>11</td>
+                                <td>2</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="hidden-xs">10</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">10</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/mallorca/11/"
+                                        title="Mallorca: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Mallorca" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/11.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Mallorca</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">11</td>
+                                <td>11</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>6</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">11</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/girona/648/"
+                                        title="Girona: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Girona" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/648.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Girona</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">6</td>
+                                <td>10</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td class="hidden-xs">10</td>
+                                <td class="hidden-xs">16</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">12</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/sevilla/53/"
+                                        title="Sevilla: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Sevilla" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/53.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Sevilla</span>
+                                    </a>
+                                    <span class="sube s-right">4</span>
+                                </th>
+                                <td class="destacado">9</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td class="hidden-xs">11</td>
+                                <td class="hidden-xs">17</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">13</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/valladolid/18/"
+                                        title="Real Valladolid: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Real Valladolid"
+                                                onload="lzld(this)" src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/18.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Real Valladolid</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">7</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">14</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/celta/6/"
+                                        title="Celta: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Celta" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/6.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Celta</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">10</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>6</td>
+                                <td class="hidden-xs">9</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">15</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/almeria/85/"
+                                        title="Almería: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Almería" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/85.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Almería</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">3</td>
+                                <td>10</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="hidden-xs">19</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">16</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/cadiz/91/"
+                                        title="Cádiz: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Cádiz" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/91.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Cádiz</span>
+                                    </a>
+                                    <span class="sube s-right">2</span>
+                                </th>
+                                <td class="destacado">8</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>6</td>
+                                <td class="hidden-xs">6</td>
+                                <td class="hidden-xs">18</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">17</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/espanyol/8/"
+                                        title="Espanyol: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Espanyol" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/8.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Espanyol</span>
+                                    </a>
+                                    <span class="baja s-right">2</span>
+                                </th>
+                                <td class="destacado">11</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td class="hidden-xs">12</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">18</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/valencia/17/"
+                                        title="Valencia: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Valencia" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/17.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Valencia</span>
+                                    </a>
+                                    <span class="baja s-right">1</span>
+                                </th>
+                                <td class="destacado">6</td>
+                                <td>10</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">19</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/getafe/172/"
+                                        title="Getafe: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Getafe" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/172.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Getafe</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">9</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td class="hidden-xs">8</td>
+                                <td class="hidden-xs">14</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="cont-nombre-equipo">
+                                    <span class="pos">20</span>
+                                    <a itemprop="url" href="/resultados/ficha/equipo/elche/121/"
+                                        title="Elche: Ver ficha completa" class="cont-enlace-equipo">
+                                        <span class="cont-img-escudo">
+                                            <img itemprop="image" alt="Escudo/Bandera Elche" onload="lzld(this)"
+                                                src="//as01.epimg.net/t.gif"
+                                                data-src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png"
+                                                srcset="//as01.epimg.net/t.gif 200w"
+                                                data-srcset="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 1x, https://as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/121.png 2x"
+                                                onerror="this.src='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';this.srcset='//as01.epimg.net/img/comunes/fotos/fichas/equipos/x-small/sin_logo.png';return;">
+                                        </span>
+
+                                        <span itemprop="name" class="nombre-equipo">Elche</span>
+                                    </a>
+                                </th>
+                                <td class="destacado">3</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>8</td>
+                                <td class="hidden-xs">7</td>
+                                <td class="hidden-xs">28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- extra-info -->
+        <div class="ext-info">
+            <span class="info-updated m-b-10">Actualizado a las <time class="s-stext-nc s-inb"
+                    datetime="Central European Time">
+                    <strong>15:07h <abbr title="Central European Time">CET</abbr></strong> - Jueves, 16/02/2023
+                </time>
+            </span>
+            <span class="cont-logo-opta s-right">
+                <a href="https://www.statsperform.com/opta/" rel="nofollow">
+                    <img width="115" height="45" src="//as01.epimg.net/img/powered-opta-hi.png" alt="Powered by Opta">
+                </a>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
