@@ -1,5 +1,7 @@
 package ejemplocomparator;
 
+import java.util.Objects;
+
 public class Corredor implements Comparable <Corredor>{
 
 	
@@ -54,7 +56,27 @@ public class Corredor implements Comparable <Corredor>{
 		}
 		
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(dorsal, marca, nombre);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Corredor other = (Corredor) obj;
+		return dorsal == other.dorsal && Double.doubleToLongBits(marca) == Double.doubleToLongBits(other.marca)
+				&& Objects.equals(nombre, other.nombre);
+	}
 	
 
+	  
+	
 	
 }
