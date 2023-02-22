@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Ejercicio 01</title>
+        <style type="text/css">
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            table{
+                border: rgb(70, 0, 0) 10px solid;
+                border-collapse:collapse;
+                width: 60%;
+                caption-side: bottom;
+            }
+            td,th{
+                border: black 3px solid;
+                width: 20%;
+                height: 50px;
+                text-align: center;
+                vertical-align: center;
+                padding: 3px;
+            }
+            th{
+                background-color: antiquewhite;
+            }
+
+            colgroup:first-of-type{
+                background-color: rgb(187, 126, 126);
+            }
+            colgroup:nth-of-type(2){
+                background-color: aqua;
+            }
+            tr:hover>td:first-of-type{
+                background-color: rgb(148, 144, 144);
+            }
+            legend{
+                color: red;
+                top: 20px;
+            }
+            fieldset:hover{
+                color: blue;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Notas en LMSGI</h1>
+
+        <table summary="Va de las notas">
+            <caption>Las notas</caption>
+            <colgroup span="3"></colgroup>
+            <colgroup span="2"></colgroup>
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Ex T5</th>
+                    <th>Bol T5</th>
+                    <th colspan="2">Proy T4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maniloto Gafotas</td>
+                    <td>8.5</td>
+                    <td>6.4</td>
+                    <td rowspan="2">9.3</td>
+                    <td>2.4</td>
+                </tr>
+                <tr>
+                    <td>Filemón</td>
+                    <td>9.2</td>
+                    <td>2.2</td>
+                    <td>4.2</td>
+                </tr>
+                <tr>
+                    <td>Mortadelo</td>
+                    <td>7.4</td>
+                    <td>6.2</td>
+                    <td>3.7</td>
+                    <td>7.2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Datos actualizados a 7/2/2023</td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <br/>
+            <h1>Formulario</h1>
+            <form name="registro" action="" method="post" autocomplete
+                enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Datos</legend>
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="nombre" id="nombre" required
+                        placeholder="pon su nombre aqui">
+                    <br/>
+                        <label for="apellido">Apellido*</label>
+                        <input type="text" name="apellido" id="apellido"
+                            required placeholder="pon su apellido aqui">
+                    </fieldset>
+                    <br/>
+                        <input type="submit" name="enviar" value="enviar">
+                        <br/>
+                            <label for="porv">Provincia</label>
+                            <br/>
+                                <select name="prov" id="prov" multiple size="2">
+                                    <option value="se" selected>Sevilla</option>
+                                    <option value="ma">Madrid</option>
+                                    <option value="pa">Palencia</option>
+                                    <option value="te">Teruel</option>
+                                    <option value="ba">Barcelona</option>
+                                    <option value="va">Valencia</option>
+                                </select>
+                                <br/>
+                                    <label for="fot">Foto</label>
+                                    <br/>
+                                        <input type="file" name="foto" id="foto"
+                                            accept=".img,.html">
+                                        <br/>
+                                            <label for="cont">Contraseña</label>
+                                            <input type="password"
+                                                id="contraseña"
+                                                name="contraseña">
+                                            <br/>
+                                                <label for="col">Color</label>
+                                                <input type="color" id="col"
+                                                    name="col">
+                                                <br/>
+                                                    <label for="mail">Email</label>
+                                                    <input type="mail" id="mail"
+                                                        name="mail">
+                                                    <br/>
+                                                        <label for="url">Url</label>
+                                                        <input type="url"
+                                                            id="url" name="url">
+                                                        <label for="number">numero</label>
+                                                        <input type="number"
+                                                            max="99" min="0"
+                                                            size="3" step="5">
+                                                        <label for="otros">otros
+                                                            Intereses</label>
+                                                        <input type="text"
+                                                            name="otrosIntereses"
+                                                            id="otros"
+                                                            list="listaIntereses">
+                                                        <datalist
+                                                            id="listaIntereses">
+                                                            <option
+                                                                value="furbo">furbo</option>
+                                                            <option
+                                                                value="ajedre">ajedre</option>
+                                                            <option
+                                                                value="tennis">tennis</option>
+                                                            <option
+                                                                value="padel">padel</option>
+                                                            <option value="no">no</option>
+                                                        </datalist>
+                                                        <label for="fnac">Fecha
+                                                            Nacimiento</label>
+                                                        <input type="date"
+                                                            id="fnac"
+                                                            name="fechaNacmiento">
+                                                        <label for="valoracion">Valoracion</label>
+                                                        <input type="range"
+                                                            name="valoracion"
+                                                            id="valoracion"
+                                                            min="1" max="100">
+                                                    </form>
+                                                </body>
+                                            </html>

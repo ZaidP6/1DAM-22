@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset:hover {
+           /* color: rgb(41, 241, 51);*/
+        }
+
+        fieldset{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        .ordenar{
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        fieldset>div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input>#aficiones{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="pon su nombre aqui">
+            <br />
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="pon su apellido aqui">
+            <br />
+            <label for="apellido">Email</label>
+            <input type="mail" name="email" id="email" required placeholder="ponga su email aqui">
+            <br />
+            <label for="user">Nombre usuario</label>
+            <input type="text" name="user" id="user" required placeholder="ponga su nombre de usuario aqui">
+            <br />
+            <label for="cont">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña">
+            <br />
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" value="M">Masculino
+            <input type="radio" name="sexo" value="F">Femenino<br/>
+        </fieldset>
+        <br />
+        <label for="fnac">Fecha de nacimiento</label>
+        <input type="date" id="fnac" name="fechaNacmiento" min="1900-01-01" max="2023-12-31">
+        <br/>
+        <fieldset class="ordenar">
+            <legend>Aficiones</legend><br/>
+            <div>
+                <input type="checkbox" name="aficion1" id="aficiones" checked="Jugar videojuegos">Jugar videouegos
+                <input type="checkbox" name="aficion2" id="aficiones">Streamear en Twitch
+                <input type="checkbox" name="aficion3" id="aficiones">Jugar al fútbol
+            </div>
+            <div>
+                <input type="checkbox" name="aficion4" id="aficiones">Programar
+                <input type="checkbox" name="aficion5" id="aficiones">Mirar Wallapop
+                <input type="checkbox" name="aficion6" id="aficiones">Escuchar música clásica
+            </div>
+            <div>
+                <input type="checkbox" name="aficion7" id="aficiones">Irse de ruta con la moto
+                <input type="checkbox" name="aficion8" id="aficiones">Ir de compras
+                <input type="checkbox" name="aficion9" id="aficiones">Hacer consultas
+            </div>
+            <div>
+                <input type="checkbox" name="aficion10" id="aficiones">Viajar
+                <input type="checkbox" name="aficion11" id="aficiones">Comer
+                <input type="checkbox" name="aficio12" id="aficiones">Leer
+            </div>
+        </fieldset>
+        <br />
+        <input type="submit" name="enviar" value="enviar">
+    </form>
+</body>
+
+</html>
