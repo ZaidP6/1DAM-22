@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset:hover {
+           /* color: rgb(41, 241, 51);*/
+        }
+
+        fieldset{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        .ordenar{
+            display: flex;
+            flex-direction: row;
+        }
+
+        fieldset>div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        input>#aficiones{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset>
+            <label>Nombre y apellidos (*)</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="pon su nombre aqui">
+            <br />
+            <input type="text" name="apellido1" id="apellido1" required placeholder="pon su apellido aqui">
+            <br />
+            <input type="text" name="apellido2" id="apellido2" required placeholder="pon su apellido aqui">
+            <br />
+        </fieldset>
+        <br />
+        <fieldset class="ordenar">
+            <label>Dirección (*)</label>
+            <input type="mail" name="email" id="email" required placeholder="ponga su email aqui">
+        </fieldset>
+        <br />
+        <fieldset class="ordenar">
+            <legend>Email</legend>
+            <label for="email">Email</label>
+            <input type="mail" name="email" id="email" required placeholder="ponga su email aqui">
+        </fieldset>
+        <br/>
+        <fieldset class="ordenar">
+            <legend>Teléfono (*)</legend>
+            <label for="email">Email</label>
+            <input type="mail" name="email" id="email" required placeholder="ponga su email aqui">
+        </fieldset>
+        <br />
+        <input type="submit" name="enviar" value="enviar">
+    </form>
+</body>
+
+</html>
