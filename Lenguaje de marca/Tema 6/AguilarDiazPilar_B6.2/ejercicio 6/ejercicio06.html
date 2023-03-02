@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset:hover {
+           background-color: rgb(124, 243, 130);
+        }
+
+        fieldset {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        .ordenar {
+            display: flex;
+            flex-direction: row;
+        }
+
+        fieldset>div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        input>#aficiones {
+            display: flex;
+            flex-direction: row;
+        }
+
+        fieldset>div>p {
+            font-size: 8pt;
+            color: grey;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de alta</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset class="ordenar">
+            <label>Nombre y apellidos *</label>
+            <br />
+            <div>
+                <input type="text" name="nombre" id="nombre" required placeholder="ponga su nombre aquí">
+                <p>Nombre</p>
+                <br />
+            </div>
+            <div>
+                <input type="text" name="apellido1" id="apellido1" required placeholder="ponga su apellido aquí">
+                <p>Primer apellido</p>
+                <br />
+            </div>
+            <div>
+                <input type="text" name="apellido2" id="apellido2" required placeholder="ponga su apellido aquí">
+                <p>Segundo apellido</p>
+                <br />
+            </div>
+        </fieldset>
+        <br />
+        <fieldset class="ordenar">
+            <label>Dirección *</label>
+            <br />
+            <div>
+                <input type="text" name="calle" id="calle" required >
+                <br />
+                <p>Calle, número, piso, puerta</p>
+                <br />
+            </div>
+            <div>
+                <input type="text" name="CP" id="CP">
+                <br />
+                <p>Código Postal</p>
+                <br />
+            </div>
+            <div>
+                <input type="text" name="Municipio" id="Municipio">
+                <br />
+                <p>Municipio</p>
+                <br />
+            </div>
+            <div>
+                <select id="provincia" name="provincia">
+                    <option value=""></option>
+                    <option value="provincia1">Sevilla</option>
+                    <option value="provincia2">Cádiz</option>
+                    <option value="provincia3">Córdoba</option>
+                </select>
+                <br />
+                <p>Provincia</p>
+                <br />
+            </div>
+            <div>
+                <select id="pais" name="pais">
+                    <option value=""></option>
+                    <option value="pais1">España</option>
+                    <option value="pais2">Spain</option>
+                    <option value="pais3">Andorra</option>
+                </select>
+                <br />
+                <p>País</p>
+            </div>
+        </fieldset>
+        <br />
+        <fieldset class="ordenar">
+            <label for="email">Email</label>
+            <br />
+            <input type="mail" name="email" id="email" required>
+            <br />
+        </fieldset>
+        <br />
+        <fieldset class="ordenar">
+            <label>Teléfono *</label>
+            <br />
+            <div>
+                <input type="tel" name="fijo" id="fijo">
+                <br />
+                <p>Fijo</p>
+                <br />
+            </div>
+            <div>
+                <input type="tel" name="movil" id="movil">
+                <br />
+                <p>Móvil</p>
+                <br />
+            </div>
+        </fieldset>
+        <br />
+        <input type="submit" name="Darme de alta" value="Darme de alta &rarr;">
+    </form>
+</body>
+
+</html>

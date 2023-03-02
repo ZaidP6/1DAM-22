@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset:hover {
+             color: rgb(255, 255, 255);
+             background-color: black;
+        }
+
+        fieldset {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        .ordenar {
+            display: flex;
+            flex-direction: row;
+        }
+
+        fieldset>div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        input>#aficiones {
+            display: flex;
+            flex-direction: row;
+        }
+
+        fieldset>div>p {
+            font-size: 8pt;
+            color: grey;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario Hotel</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset class="ordenar">
+            <label>Datos Reserva *</label>
+            <br />
+            <div>
+                <input type="number" name="nHuespedes" id="nHuespedes" min="1" max="" step="1" required>
+                <p>Número de huéspedes</p>
+                <br />
+            </div>
+            <div>
+                <input type="date" name="fechaen" id="fechaen" required min="1900-01-01" max="2024-12-31">
+                <p>Fecha entrada</p>
+                <br />
+            </div>
+            <div>
+                <input type="date" name="fechasa" id="fechasa" required min="1900-01-01" max="2024-12-31">
+                <p>Fecha salida</p>
+                <br />
+            </div>
+            <div>
+                <select id="tiphabitacion" name="tiphabitacion">
+                    <option value="hab1">Habitación simple</option>
+                    <option value="hab2">Habitación doble</option>
+                    <option value="hab3">Suite</option>
+                    <option value="hab4">Familiar</option>
+                </select>
+                <br />
+                <p>Tipo habitación</p>
+                <br />
+            </div>
+        </fieldset>
+        <br />
+        <fieldset class="ordenar">
+            <label>Datos Cliente *</label>
+            <br />
+            <div>
+                <input type="tel" name="fijo" id="fijo">
+                <br />
+                <p>Fijo</p>
+                <br />
+            </div>
+            <div>
+                <input type="tel" name="movil" id="movil">
+                <br />
+                <p>Móvil</p>
+                <br />
+            </div>
+            <div>
+                <input type="mail" name="email" id="email" required>
+                <br />
+                <p>Email</p>
+                <br/>
+            </div>
+        </fieldset>
+        <br />
+        <input type="submit" name="Hacer reserva" value="Hacer reserva &rarr;">
+    </form>
+</body>
+
+</html>
