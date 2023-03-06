@@ -60,6 +60,16 @@ CREATE TABLE IF NOT EXISTS public.tipos_curso
     PRIMARY KEY (cod_curso)
 );
 
+-- ALUMNOS
+INSERT INTO alumnos VALUES ('77869582J', 'Luis Miguel', 'Rodrigo de triana 24, 2A; 41927, Sevilla', '633958244', 39, 'Salesianos Triana');
+
+-- EMPRESAS
+INSERT INTO empresas VALUES ('685468468448GR', 'Salesianos Triana', 'Condes de Bustillo 13, Triana', '954683327');
+
+-- TIPOS_CURSO
+INSERT INTO tipos_curso VALUES (001, 250, 'creación de tablas','creador de bbdd');
+
+
 ALTER TABLE IF EXISTS public.alumnos
     ADD CONSTRAINT empresa FOREIGN KEY (empresa)
     REFERENCES public.empresas (cif) MATCH SIMPLE
@@ -72,7 +82,7 @@ ALTER TABLE IF EXISTS public.cursos
     ADD CONSTRAINT dni_profesor FOREIGN KEY (dni_profesor)
     REFERENCES public.profesores (dni) MATCH SIMPLE
     ON UPDATE NO ACTION
-    ON DELETE NO ACTION
+    ON DELETE SET NULL
     NOT VALID;
 
 
@@ -80,7 +90,7 @@ ALTER TABLE IF EXISTS public.cursos
     ADD CONSTRAINT tipo_curso FOREIGN KEY (tipo_curso)
     REFERENCES public.tipos_curso (cod_curso) MATCH SIMPLE
     ON UPDATE NO ACTION
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     NOT VALID;
 
 
@@ -96,7 +106,12 @@ ALTER TABLE IF EXISTS public.asistencia_alumnos
     ADD CONSTRAINT n_concreto FOREIGN KEY (n_concreto)
     REFERENCES public.cursos (n_concreto) MATCH SIMPLE
     ON UPDATE NO ACTION
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     NOT VALID;
 
 END;
+
+-- al declarar la PK hay que poner CONSTRAINT pk_nombretabla FOREINGN KEY (nombrePK)
+-- ALTER TABLE tabladelaFK
+-- ADD CONSTRAINT fk_tabladelaFK_tabladelaPK FOREIGN KEY (nombreFK) REFERENCES nombretablaPK(PKreferenciada)
+-- ON DELETE ....tipo de borrado;
