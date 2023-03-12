@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS Vehículo;
-DROP TABLE IF EXISTS Cliente;
+DROP TABLE IF EXISTS vehiculo;
+DROP TABLE IF EXISTS cliente;
 
-CREATE TABLE Vehículo(
-	Matrícula varchar(12),
+CREATE TABLE vehiculo(
+	matricula varchar(12),
 	Marca varchar(40),
 	Modelo varchar(55),
 	Fecha_matriculación date,
@@ -11,22 +11,19 @@ CREATE TABLE Vehículo(
 	Número_bastidor varchar(55),
 	Neumáticos varchar(40),
 	PotenciaCV integer,
-	Tipo_batería varchar(25),
 	
-	CONSTRAINT pk_Vehículo PRIMARY KEY(Matrícula)
+	CONSTRAINT pk_vehiculo PRIMARY KEY(matricula)
 );
 
-CREATE TABLE Cliente(
-	DNI_cliente varchar(20),
-	Nombre varchar(40),
-	Apellido1 varchar(25),
-	Apellido2 varchar(25),
-	Dirección varchar(100),
-	Teléfono varchar(15) UNIQUE NOT NULL,
-	Email varchar(40),
-	Fecha_nacimiento date,
-	Matrícula varchar(12),
+CREATE TABLE cliente(
+	dni varchar(20),
+	nombre varchar(40),
+	apellidos varchar(50),
+	direccion text,
+	telefono varchar(15) UNIQUE NOT NULL,
+	email varchar(40),
+	fecha_nacimiento date,
+	matricula varchar(12),
 	
-	CONSTRAINT pk_Cliente PRIMARY KEY(DNI_cliente),
-	FOREIGN KEY(Matrícula) REFERENCES Vehículo(Matrícula)
+	CONSTRAINT pk_cliente PRIMARY KEY(dni)
 );

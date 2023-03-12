@@ -1750,17 +1750,18 @@
 									"model": {
 										"$ref": "AAAAAAGGtDx0YZJB2FY="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 215,
+									"left": 206,
 									"top": 643,
+									"width": 19.5126953125,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAGGtDx0YpJESyc="
 									},
-									"edgePosition": 2
+									"edgePosition": 2,
+									"text": "0..*"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -1811,16 +1812,17 @@
 									"model": {
 										"$ref": "AAAAAAGGtDx0YpJCV9M="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 213,
+									"left": 204,
 									"top": 512,
+									"width": 19.5126953125,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAGGtDx0YpJESyc="
-									}
+									},
+									"text": "1..*"
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
@@ -2021,17 +2023,18 @@
 									"model": {
 										"$ref": "AAAAAAGGtES7C6KanH4="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 281,
+									"left": 271,
 									"top": 386,
+									"width": 21.68359375,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAGGtES7C6Kdq20="
 									},
-									"edgePosition": 2
+									"edgePosition": 2,
+									"text": "1..*"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2082,16 +2085,17 @@
 									"model": {
 										"$ref": "AAAAAAGGtES7C6KbCm0="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 382,
+									"left": 379,
 									"top": 381,
+									"width": 7.22998046875,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAGGtES7C6Kdq20="
-									}
+									},
+									"text": "1"
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
@@ -2292,17 +2296,18 @@
 									"model": {
 										"$ref": "AAAAAAGGtEVInqXzugQ="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 382,
+									"left": 373,
 									"top": 425,
+									"width": 19.5126953125,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAGGtEVInqX2PPI="
 									},
-									"edgePosition": 2
+									"edgePosition": 2,
+									"text": "1"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -2353,16 +2358,17 @@
 									"model": {
 										"$ref": "AAAAAAGGtEVInqX0dOk="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 281,
+									"left": 272,
 									"top": 430,
+									"width": 19.5126953125,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
 										"$ref": "AAAAAAGGtEVInqX2PPI="
-									}
+									},
+									"text": "1..*"
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
@@ -2463,7 +2469,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGGtDNCyI+GHMQ="
-								}
+								},
+								"multiplicity": "0..*"
 							},
 							"end2": {
 								"_type": "UMLAssociationEnd",
@@ -2473,7 +2480,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGGtDevy5FymLc="
-								}
+								},
+								"multiplicity": "1..*"
 							}
 						}
 					],
@@ -2485,7 +2493,8 @@
 								"$ref": "AAAAAAGGtDNCyI+GHMQ="
 							},
 							"name": "nombre",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2494,7 +2503,8 @@
 								"$ref": "AAAAAAGGtDNCyI+GHMQ="
 							},
 							"name": "fechaDeCompra",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"isAbstract": true
@@ -2529,7 +2539,8 @@
 								"$ref": "AAAAAAGGtDVhcpBqwi0="
 							},
 							"name": "combustible",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2538,7 +2549,8 @@
 								"$ref": "AAAAAAGGtDVhcpBqwi0="
 							},
 							"name": "potencia",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2547,7 +2559,8 @@
 								"$ref": "AAAAAAGGtDVhcpBqwi0="
 							},
 							"name": "nPlazas",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -2581,7 +2594,8 @@
 								"$ref": "AAAAAAGGtDXE5ZDMOfw="
 							},
 							"name": "motor",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -2615,7 +2629,8 @@
 								"$ref": "AAAAAAGGtDX3PJEKhAA="
 							},
 							"name": "precioAdq",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -2652,7 +2667,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGGtDevy5FymLc="
-								}
+								},
+								"multiplicity": "1..*"
 							},
 							"end2": {
 								"_type": "UMLAssociationEnd",
@@ -2662,7 +2678,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGGtDo01ZHOqZ8="
-								}
+								},
+								"multiplicity": "1"
 							}
 						}
 					],
@@ -2674,7 +2691,8 @@
 								"$ref": "AAAAAAGGtDevy5FymLc="
 							},
 							"name": "nombre",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2683,7 +2701,8 @@
 								"$ref": "AAAAAAGGtDevy5FymLc="
 							},
 							"name": "apellidos",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2692,7 +2711,8 @@
 								"$ref": "AAAAAAGGtDevy5FymLc="
 							},
 							"name": "dni",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2701,7 +2721,8 @@
 								"$ref": "AAAAAAGGtDevy5FymLc="
 							},
 							"name": "email",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2710,7 +2731,8 @@
 								"$ref": "AAAAAAGGtDevy5FymLc="
 							},
 							"name": "telefono",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -2737,7 +2759,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGGtDo01ZHOqZ8="
-								}
+								},
+								"multiplicity": "1"
 							},
 							"end2": {
 								"_type": "UMLAssociationEnd",
@@ -2747,7 +2770,8 @@
 								},
 								"reference": {
 									"$ref": "AAAAAAGGtDevy5FymLc="
-								}
+								},
+								"multiplicity": "1..*"
 							}
 						}
 					],
@@ -2759,7 +2783,8 @@
 								"$ref": "AAAAAAGGtDo01ZHOqZ8="
 							},
 							"name": "nombre",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2768,7 +2793,8 @@
 								"$ref": "AAAAAAGGtDo01ZHOqZ8="
 							},
 							"name": "provincia",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2777,7 +2803,8 @@
 								"$ref": "AAAAAAGGtDo01ZHOqZ8="
 							},
 							"name": "nHabitantes",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				}

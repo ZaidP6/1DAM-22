@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style8.css" />
+</head>
+<body>
+    <main>
+        <form name="registroHab2" action="" method="post" autocomplete  enctype="multipart/form-data">
+            <fieldset>
+                <label for="contacto" class="titulo">Contacto</label>
+                <div>
+                    <label for="name" id="name">Nombre <span class="requerido">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="lstname">Apellidos <span class="requerido">*</span></label>
+                    <input type="text" name="lstname" id="lastname" required>
+                </div>
+                <div>
+                    <label for="dni">DNI <span class="requerido">*</span></label>
+                    <input type="text" name="dni" id="dni" required>
+                </div>
+                <div>
+                    <label for="email">Email <span class="requerido">*</span></label>
+                    <input type="email" name="email" id="email" required>                
+                </div>
+                <div>
+                    <label for="tlfn">Teléfono <span class="requerido" required>*</span></label>
+                    <input type="text" name="tlfn" id="tlnf">
+                </div>
+                <div>
+                    <label for="direccion">Direccion</label><input type="text" name="direccion" id="direccion">
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="habitacion" class="titulo">Habitacion</label>
+                <div>
+                    <label for="hab">Habitación <span class="requerido">*</span></label>
+                    <select name="hab" id="hab" size="1" required>
+                        <option value="dob" selected>Doble</option>
+                        <option value="cua">Cuatriple</option>
+                        <option value="kid">Niños</option>
+                        <option value="lit">Literas</option>
+                        <option value="pre">Premium</option>
+                        <option value="eco">Económica</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="numH">Número de Huespedes <span class="requerido">*</span></label>
+                    <input type="number" name="numHuesped" id="numH" required>
+                </div>
+                <div>
+                    <label for="fechain">Fecha de entrada <span class="requerido">*</span></label>
+                    <input type="date" name="fechain" id="fechain" required>
+                </div>
+                <div>
+                    <label for="fechaout">Fecha de salida <span class="requerido">*</span></label>
+                    <input type="date" name="fechaout" id="fechaout" required>
+                </div>
+                <div>
+                    <input type="submit" value="ENVIAR" name="enviar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

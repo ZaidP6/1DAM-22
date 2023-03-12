@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Registro</h1>
+        <form name="registro" action="" method="post" autocomplete="on" enctype="multipart/form-data">
+            <div>
+                <label for="name">Nombre*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="1surname">Apellido 1*</label>
+                <input type="text" id="1surname" name="1surname" required>
+            </div>
+            <div>
+                <label for="2surname">Apellido 2</label>
+                <input type="text" id="2surname" name="2surname">
+            </div>
+            <div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="user">Usuario *</label>
+                <input type="text" id="user" name="user" required>
+            </div>
+            <div>
+                <label for="passw">Contraseña *</label>
+                <input type="text" id="passw" name="passw" required>
+            </div>
+            <div>
+                <label for="passw2">Repetir Contraseña *</label>
+                <input type="text" id="passw2" name="passw2" required>
+            </div>
+            <div>
+                <label for="sexo">Sexo *</label>
+                <input type="radio" value="H" name="sexo" required>Hombre
+                <input type="radio" value="M" name="sexo" required>Mujer
+            </div>
+            <div>
+                <label for="fnac">Fecha Nacimiento *</label>
+                <input type="date" id="fnac" name="fechaNacmiento" required>
+            </div>
+                <p>Aficiones:</p>
+                <div class="aficiones"><input type="checkbox" name="pro" id="pro" value="pro"><label for="pro">Progamar</label></div>
+                <div class="aficiones"><input type="checkbox" name="fut" id="fut"  value="fut"><label for="fut">Futbol</label></div>
+                <div class="aficiones"><input type="checkbox" name="gaming" id="gaming" value="gaming"><label for="gaming">Videojuegos</label></div>
+                <div class="aficiones"><input type="checkbox" name="padel" id="padel" value="padel"><label for="padel">Padel</label></div>
+                <div class="aficiones"><input type="checkbox" name="walk" id="walk" value="walk"><label for="walk">Senderismo</label></div>
+                <div class="aficiones"><input type="checkbox" name="tennis" id="tennis" value="tennis"><label for="tennis">Tennis</label></div>
+                <div class="aficiones"><input type="checkbox" name="swim" id="swim" value="swim"><label for="swim">Natacion</label></div>
+                <div class="aficiones"><input type="checkbox" name="drive" id="drive" value="drive"><label for="drive">Conducir</label></div>
+                <div class="aficiones"><input type="checkbox" name="music" id="music" value="music"><label for="music">Musica</label></div>
+                <div class="aficiones"><input type="checkbox" name="killz" id="killz" value="killz"><label for="killz">Matar zombies</label></div>
+                <div class="aficiones"><input type="checkbox" name="killz2" id="killz2" value="killz2"><label for="killz2">Matar zombies, otra vez</label></div>
+                <div class="aficiones"><input type="checkbox" name="killz3" id="killz3" value="killz3"><label for="killz3">Matar mas zombies, otra vez</label></div>
+            <div>
+                <input type="submit" value="Enviar" name="enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
