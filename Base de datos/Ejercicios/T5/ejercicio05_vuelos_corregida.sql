@@ -114,7 +114,7 @@ GROUP BY nombre, TO_CHAR(llegada, 'TMMonth'));
 WITH trafico_salida AS (
 	SELECT nombre, TO_CHAR(salida, 'TMMonth') as "mes",
 		EXTRACT(month FROM salida) as "nmes",
-		COUNT(id_reserva) "num_personas", 
+		COUNT(id_reserva) as "num_personas", 
 		'salida' as "tipo_trafico"
 	FROM aeropuerto JOIN vuelo ON (desde = id_aeropuerto)
 			JOIN reserva USING (id_vuelo)
