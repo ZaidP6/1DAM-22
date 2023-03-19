@@ -104,7 +104,7 @@ section {
 
 @media (min-width: 1199px) {
   .section-header p {
-    max-width: 60%;
+    max-width: 90%;
   }
 }
 
@@ -1185,6 +1185,7 @@ section {
 .about .our-story {
   padding: 40px;
   background-color: #f5f6f7;
+  text-align: justify;
 }
 
 @media (min-width: 991px) {
@@ -1201,7 +1202,7 @@ section {
 
 .about .our-story h3 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
   color: var(--color-secondary);
 }
