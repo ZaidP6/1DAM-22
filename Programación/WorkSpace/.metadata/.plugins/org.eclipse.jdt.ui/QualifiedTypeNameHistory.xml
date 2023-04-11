@@ -27,4 +27,5 @@
     <fullyQualifiedTypeName name="java.rmi.server.ObjID"/>
     <fullyQualifiedTypeName name="ejercicio.Cancion"/>
     <fullyQualifiedTypeName name="utilidades.Leer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
