@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Sign In</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset:hover {
+            color: blue;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br />
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido" id="apellido" required>
+        <br />
+        <label for="col">Usuario</label>
+        <input type="mail" id="user" name="user" required>
+        <br />
+        <label for="cont">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+        <br />
+        <label for="fnac">Fecha Nacimiento</label>
+        <input type="date" id="fnac" name="fechaNacmiento" required>
+        <br />
+        <label for="fot">Foto</label>
+        <input type="file" name="foto" id="foto" accept=".img,.html,.png">
+        <br/>
+        <input type="submit" name="Registrarse" value="Registrarse">
+        <br/>
+    </form>
+</body>
+
+</html>
