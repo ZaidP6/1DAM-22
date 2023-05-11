@@ -1,0 +1,71 @@
+DROP TABLE IF EXISTS invitados;
+DROP TABLE IF EXISTS teatros DELETE CASCADE;
+DROP TABLE IF EXISTS obras DELETE CASCADE;
+DROP TABLE IF EXISTS tipos_asientos DELETE CASCADE;
+DROP TABLE IF EXISTS exhibe DELETE CASCADE;
+DROP TABLE IF EXISTS asientos_tipo;
+DROP TABLE IF EXISTS precio;
+
+
+CREATE TABLE invitados(
+NroInvitado	integer,
+Nombre		varchar,
+Categoria	varchar,
+Origen		varchar(20)
+);
+
+CREATE TABLE teatros(
+CodTeat		integer,
+Nombre		varchar,
+Direccion	text, 
+CantAsientos	integer
+);
+
+CREATE TABLE obras(
+CodObra		smallint,
+NombreObra	text,
+Autor		varchar
+);
+
+CREATE TABLE  tipos_asientos(
+Tipo		smallint,
+Nombre		varchar,
+Descripcion	text
+);
+
+CREATE TABLE exhibe(
+CodTeat		integer,
+Feha		date,
+CodObra		smallint,
+
+CONSTRAINT FK_exhibe_teatros FOREIGN KEY (CodTeat) 
+REFERENCES teatros (CodTeat)
+ON DELETE CASCADE,
+CONSTRAINT FK_exhibe_obras FOREIGN KEY (CodObra) 
+REFERENCES obras (CodObra)
+ON DELETE CASCADE,
+);
+
+CREATE TABLE asiento_tipos(
+NroAseinto	integer,
+Tipo		smallint,
+
+CONSTRAINT FK_asiento_tipos_tipos_asientos FOREIGN KEY (tipo) 
+REFERENCES tipos_asientos (tipo)
+ON DELETE CASCADE;
+);
+
+CREATE TABLE precio(
+CodTeat		integer,
+Fecha		date,
+Tipo		smallint,
+Precio		real,
+
+CONSTRAINT FK_precio_exhibe FOREIGN KEY (CodTeat, Fecha) 
+REFERENCES exhibe (CodTeat, Fecha)
+ON DELETE CASCADE,
+
+CONSTRAINT FK_precio_tipos_aseintos FOREIGN KEY (Tipo) 
+REFERENCES tipo_asientos (Tipo)
+ON DELETE CASCADE
+);
