@@ -1,1 +1,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+https://mdbootstrap.com/docs/standard/extended/back-to-top/
+
+https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view
+
+https://getbootstrap.com/docs/5.0/examples/#custom-components
+
+https://mdbootstrap.com/docs/standard/navigation/navbar/examples-and-customization/
+
+https://themewagon.com/themes/guide/
+
+https://www.dllme.com/dll/files/arwcontrollerimpl
+
+https://mdbootstrap.com/docs/standard/components/carousel/#docsTabsAPI
+
+https://github.com/mdbootstrap/bootstrap-back-to-top-button
+
+
+
+https://www.devwares.com/docs/contrast/javascript/components/forms/
+
+https://bootsnipp.com/tags/animation
+
+https://bbbootstrap.com/snippets/bootstrap-5-rolling-images-animation-33714815
+
