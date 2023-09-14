@@ -1,4 +1,5 @@
 private Cliente []listaC;
+private long num;
 
 public Cliente findByDni (String dni) {
         int i=0;
